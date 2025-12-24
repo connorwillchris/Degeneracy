@@ -15,7 +15,6 @@ local function haslocksticker()
 end
 
 local cdref = G.FUNCS.can_discard
-
 function G.FUNCS.can_discard(e)
     cdref(e)
     if haslocksticker() then
@@ -32,7 +31,7 @@ SMODS.Sticker {
     sets =  { ["Default"] = true, ["Enhanced"] = true, ["Base"] = true },
     needs_enable_flag = true,
 
-    --[[apply = function (self, card, val)
+    apply = function (self, card, val)
         if val then
             card.ability['deg_locked'] = true
             card.ability['deg_unlocked'] = false
@@ -40,6 +39,6 @@ SMODS.Sticker {
             card.ability['deg_locked'] = false
             card.ability['deg_unlocked'] = true
         end
-    end]]
-    
+    end
 }
+
