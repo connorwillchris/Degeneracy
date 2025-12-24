@@ -1,0 +1,16 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+[[patches]]
+[patches.pattern]
+target = 'card.lua'
+match_indent = false
+position = 'at'
+pattern = '''
+                    nominal_chips = self.base.nominal > 0 and self.base.nominal or nil,
+'''
+payload = '''
+                    nominal_chips = (self.base.nominal > 0 and "+" or "")..(self.base.nominal or ""),
+'''

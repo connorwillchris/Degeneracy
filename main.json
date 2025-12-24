@@ -1,0 +1,13 @@
+{
+	"id": "Degeneracy",
+	"name": "Degeneracy",
+	"display_name": "Degeneracy",
+	"author": ["Gud (and others)"],
+	"description": "Hi",
+	"prefix": "deg",
+	"main_file": "main.lua",
+	"priority": 0,
+	"badge_colour": "a28e7b",
+	"badge_text_colour": "FFFFFF",
+	"version": "0.0.01"
+}
