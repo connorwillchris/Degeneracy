@@ -24,7 +24,13 @@ SMODS.Challenge {
     deck = {
         type = 'Challenge Deck',
         cards = cards
-    }
+    },
+    rules = {
+        custom = {
+            { id = "inversion" },
+            { id = "inversion_info" },
+        },
+    },
 }
 
 SMODS.Challenge {
