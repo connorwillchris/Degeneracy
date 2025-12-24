@@ -36,13 +36,13 @@ return {
         },
     },
     misc = {
-        challenge_names={
+        challenge_names = {
             c_deg_inversion = "Inversion",
             c_deg_throwthekey = "Throw the key",
         },
         dictionary = {
             --[[k_deg_AAAA = "consumable",
-            b_deg_AAAA_cards = "consumable Cards",]]--
+            b_deg_AAAA_cards = "consumable Cards",]] --
         },
         labels = {
             deg_locked = "Locked"
@@ -66,6 +66,14 @@ return {
             ["deg_0.5"] = "0.5",
             ["deg_pi"] = "Pi",
             ["deg_21"] = "21",
+        },
+        v_text = {
+            ch_c_throwthekey = {
+                "{C:green}1 in 7{} cards in deck are {C:attention}locked",
+            },
+            ch_c_throwthekey_info = {
+                "{C:inactive,s:0.8}(Can't be manually discarded)",
+            },
         },
     }
 }
