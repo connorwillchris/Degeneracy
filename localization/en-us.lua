@@ -69,7 +69,7 @@ return {
         },
         v_text = {
             ch_c_throwthekey = {
-                "{C:green}1 in 7{} cards in deck are {C:attention}locked",
+                "{C:green}1 in 4{} cards in deck are {C:attention}locked",
             },
             ch_c_throwthekey_info = {
                 "{C:inactive,s:0.8}(Can't be manually discarded)",
