@@ -68,6 +68,12 @@ return {
             ["deg_21"] = "21",
         },
         v_text = {
+            ch_c_inversion = {
+                "{C:hearts}hearts{} and {C:diamonds}diamonds{} have a negative rank",
+            },
+            ch_c_inversion_info = {
+                "{C:inactive,s:0.8}(Take chips instead of adding chips)",
+            },
             ch_c_throwthekey = {
                 "{C:green}1 in 4{} cards in deck are {C:attention}locked",
             },
