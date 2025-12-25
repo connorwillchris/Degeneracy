@@ -11,7 +11,7 @@ SMODS.Stake({
     pos = { x = 0, y = 0 },
     sticker_atlas = "deg_stickers",
     sticker_pos = { x = 1, y = 0 },
-    above_stake = 'gold',
+    above_stake = "gold",
     applied_stakes = { "gold" },
     prefix_config = { above_stake = { false }, applied_stakes = { mod = false } },
     colour = HEX("d2ad64"),
@@ -20,7 +20,7 @@ SMODS.Stake({
         if G.GAME.modifiers.enable_deg_locked and not G.GAME.brass_applied then
             G.GAME.brass_applied = true -- so it only does it once
             for i = 1, #G.playing_cards do
-                if SMODS.pseudorandom_probability(self, 'deg_seed', 1, 7, 'brass') then
+                if SMODS.pseudorandom_probability(self, "deg_seed", 1, 7, "brass") then
                     SMODS.Stickers["deg_locked"]:apply(G.playing_cards[i], true)
                 end
             end

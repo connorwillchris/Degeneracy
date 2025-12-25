@@ -13,6 +13,7 @@ SMODS.Atlas {
 }
 
 local ref = next
+
 next = function(a, ...)
     if type(a) ~= "table" then
         return nil

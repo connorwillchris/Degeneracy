@@ -1,12 +1,11 @@
 :: Mostly used by ConnorWillChris
 
-
 :: your computer's username
 set USER_NAME=Connor
 
 :: where the mod folder is located on your system
 set USER_MOD_PROJECT="C:\Users\%USER_NAME%\Documents\Projects\Balatro Modding\myMods"
-set COPY_DIR="C:\Users\Connor\AppData\Roaming\Balatro\Mods"
+set COPY_DIR="C:\Users\%USER_NAME%\AppData\Roaming\Balatro\Mods"
 set PROJECT_NAME=Degeneracy
 
 cd %COPY_DIR%

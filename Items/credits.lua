@@ -2,7 +2,7 @@ SMODS.current_mod.credits_tab = function()
     local loc_nodes = {}
 
     localize {
-        type = 'descriptions',
+        type = "descriptions",
         set = "Other",
         key = "deg_credits",
         nodes = loc_nodes,
