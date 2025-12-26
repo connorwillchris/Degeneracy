@@ -17,8 +17,8 @@ return {
                     "{C:blue,s:2}Ideas",
                     "{C:white,s:1}Gud & Astro",
                     "{C:red,s:2}Programmers",
-                    "{C:white,s:1}Jamirror, CG, TheOneGoofAli, Silverautumn NK &",
-                    "{C:white,s:1}cloudzXIII",
+                    "{C:white,s:1}Jamirror, CG, TheOneGoofAli, Silverautumn NK,",
+                    "{C:white,s:1}cloudzXIII & connorwillchris",
                     "{C:green,s:2}Art",
                     "{C:white,s:1}Gud",
                 }
