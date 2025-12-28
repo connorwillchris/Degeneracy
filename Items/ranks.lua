@@ -1,15 +1,15 @@
 SMODS.Atlas {
-	key = "cards_lc",
-	path = "ranks_lc.png",
-	px = 71,
-	py = 95
+    key = "cards_lc",
+    path = "ranks_lc.png",
+    px = 71,
+    py = 95
 }
 
 SMODS.Atlas {
-	key = "cards_hc",
-	path = "ranks_hc.png",
-	px = 71,
-	py = 95
+    key = "cards_hc",
+    path = "ranks_hc.png",
+    px = 71,
+    py = 95
 }
 
 local ref = next
@@ -24,8 +24,8 @@ end
 
 SMODS.Rank {
     in_pool = function(self, args)
-        if (args.suit == '') or (args.initial_deck) then -- i assume you don't want these to appear in the normal deck
-        -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
+        if args and ((args.suit == '') or (args.initial_deck)) then -- i assume you don't want these to appear in the normal deck
+            -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
             return false
         else
             return true -- assuming you want this ranks to always be able to appear in standards and such
@@ -56,11 +56,11 @@ SMODS.Rank {
     hc_atlas = "cards_hc",
 }
 
-for _, v in ipairs({ -3, -4, -5, -6, -7, -8, -9}) do
+for _, v in ipairs({ -3, -4, -5, -6, -7, -8, -9 }) do
     SMODS.Rank {
         in_pool = function(self, args)
-            if (args.suit == '') or (args.initial_deck) then -- i assume you don't want these to appear in the normal deck
-            -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
+            if args and ((args.suit == '') or (args.initial_deck)) then -- i assume you don't want these to appear in the normal deck
+                -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
                 return false
             else
                 return true -- assuming you want this ranks to always be able to appear in standards and such
@@ -69,7 +69,7 @@ for _, v in ipairs({ -3, -4, -5, -6, -7, -8, -9}) do
         key = v .. "",
         shorthand = v .. "",
         card_key = v .. "",
-        pos = { x = ( v * -1 ) - 2 },
+        pos = { x = (v * -1) - 2 },
         nominal = v,
         suit_map = {
             Hearts = 0,
@@ -90,12 +90,12 @@ for _, v in ipairs({ -3, -4, -5, -6, -7, -8, -9}) do
         lc_atlas = "cards_lc",
         hc_atlas = "cards_hc",
     }
-end 
+end
 
 SMODS.Rank {
     in_pool = function(self, args)
-        if (args.suit == '') or (args.initial_deck) then -- i assume you don't want these to appear in the normal deck
-        -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
+        if args and ((args.suit == '') or (args.initial_deck)) then -- i assume you don't want these to appear in the normal deck
+            -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
             return false
         else
             return true -- assuming you want this ranks to always be able to appear in standards and such
@@ -128,8 +128,8 @@ SMODS.Rank {
 
 SMODS.Rank {
     in_pool = function(self, args)
-        if (args.suit == '') or (args.initial_deck) then -- i assume you don't want these to appear in the normal deck
-        -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
+        if args and ((args.suit == '') or (args.initial_deck)) then -- i assume you don't want these to appear in the normal deck
+            -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
             return false
         else
             return true -- assuming you want this ranks to always be able to appear in standards and such
@@ -164,14 +164,14 @@ SMODS.Rank {
 
 SMODS.Rank {
     in_pool = function(self, args)
-        if (args.suit == '') or (args.initial_deck) then -- i assume you don't want these to appear in the normal deck
-        -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
+        if args and ((args.suit == '') or (args.initial_deck)) then -- i assume you don't want these to appear in the normal deck
+            -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
             return false
         else
             return true -- assuming you want this ranks to always be able to appear in standards and such
         end
     end,
-    key = '-Queen', 
+    key = '-Queen',
     card_key = '-Q',
     pos = { x = 10 },
     nominal = -10,
@@ -200,8 +200,8 @@ SMODS.Rank {
 
 SMODS.Rank {
     in_pool = function(self, args)
-        if (args.suit == '') or (args.initial_deck) then -- i assume you don't want these to appear in the normal deck
-        -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
+        if args and ((args.suit == '') or (args.initial_deck)) then -- i assume you don't want these to appear in the normal deck
+            -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
             return false
         else
             return true -- assuming you want this ranks to always be able to appear in standards and such
@@ -236,8 +236,8 @@ SMODS.Rank {
 
 SMODS.Rank {
     in_pool = function(self, args)
-        if (args.suit == '') or (args.initial_deck) then -- i assume you don't want these to appear in the normal deck
-        -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
+        if args and ((args.suit == '') or (args.initial_deck)) then -- i assume you don't want these to appear in the normal deck
+            -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
             return false
         else
             return true -- assuming you want this ranks to always be able to appear in standards and such
@@ -271,8 +271,8 @@ SMODS.Rank {
 
 SMODS.Rank {
     in_pool = function(self, args)
-        if (args.suit == '') or (args.initial_deck) then -- i assume you don't want these to appear in the normal deck
-        -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
+        if args and ((args.suit == '') or (args.initial_deck)) then -- i assume you don't want these to appear in the normal deck
+            -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
             return false
         else
             return true -- assuming you want this ranks to always be able to appear in standards and such
@@ -306,8 +306,8 @@ SMODS.Rank {
 
 SMODS.Rank {
     in_pool = function(self, args)
-        if (args.suit == '') or (args.initial_deck) then -- i assume you don't want these to appear in the normal deck
-        -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
+        if args and ((args.suit == '') or (args.initial_deck)) then -- i assume you don't want these to appear in the normal deck
+            -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
             return false
         else
             return true -- assuming you want this ranks to always be able to appear in standards and such
@@ -321,7 +321,7 @@ SMODS.Rank {
         Hearts = 0,
         Clubs = 1,
         Diamonds = 2,
-        Spades = 3, 
+        Spades = 3,
         bunc_Fleurons = 4,
         bunc_Halberds = 5,
         paperback_Stars = 6,
@@ -341,8 +341,8 @@ SMODS.Rank {
 
 SMODS.Rank {
     in_pool = function(self, args)
-        if (args.suit == '') or (args.initial_deck) then -- i assume you don't want these to appear in the normal deck
-        -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
+        if args and ((args.suit == '') or (args.initial_deck)) then -- i assume you don't want these to appear in the normal deck
+            -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
             return false
         else
             return true -- assuming you want this ranks to always be able to appear in standards and such
@@ -376,8 +376,8 @@ SMODS.Rank {
 
 SMODS.Rank {
     in_pool = function(self, args)
-        if (args.suit == '') or (args.initial_deck) then -- i assume you don't want these to appear in the normal deck
-        -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
+        if args and ((args.suit == '') or (args.initial_deck)) then -- i assume you don't want these to appear in the normal deck
+            -- the reason for "args.suit == ''" is because the ui that displays these ranks checks if they can appear by calling the in_pool function with an empty string (or if you have any of that rank)
             return false
         else
             return true -- assuming you want this ranks to always be able to appear in standards and such
@@ -408,4 +408,3 @@ SMODS.Rank {
     lc_atlas = "cards_lc",
     hc_atlas = "cards_hc",
 }
-    
