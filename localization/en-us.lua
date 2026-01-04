@@ -1,5 +1,14 @@
 return {
     descriptions = {
+        Joker = {
+            j_deg_break_limits = {
+                name = "Break Limits",
+                text = {
+                    "1 random scoring card",
+                    "is retriggered {C:attention}#1#{} times"
+                }
+            },
+        },
         Other = {
             deg_locked = {
                 name = "Locked",

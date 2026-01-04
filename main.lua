@@ -4,6 +4,7 @@ assert(SMODS.load_file("Items/credits.lua"))()
 assert(SMODS.load_file("Items/ranks.lua"))()
 assert(SMODS.load_file("Items/stakes.lua"))()
 assert(SMODS.load_file("Items/stickers.lua"))()
+assert(SMODS.load_file("Items/jokers.lua"))()
 
 SMODS.Atlas({
     key = "modicon",
