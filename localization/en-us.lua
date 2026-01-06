@@ -23,13 +23,14 @@ return {
             },
             deg_credits = {
                 text = {
+                    "{C:white,s:1}({C:attention,s:1}yellow {C:white,s:1}names are for people who contributed a lot)",
                     "{C:blue,s:2}Ideas",
-                    "{C:white,s:1}Gud & Astro",
-                    "{C:red,s:2}Programmers",
-                    "{C:white,s:1}Jamirror, CG, TheOneGoofAli, Silverautumn NK,",
-                    "{C:white,s:1}cloudzXIII & connorwillchris",
-                    "{C:green,s:2}Art",
-                    "{C:white,s:1}Gud",
+                    "{C:attention,s:1}Gud{C:white,s:1}, Astro, Nrio & candycaneanniahlator",
+                    "{C:blue,s:2}Programmers",
+                    "{C:white,s:1}Jamirror, CG, TheOneGoofAli, {C:attention,s:1}Silverautumn NK,",
+                    "{C:attention,s:1}cloudzXIII {C:white,s:1}&{C:attention,s:1} connorwillchris",
+                    "{C:blue,s:2}Art",
+                    "{C:attention,s:1}Gud",
                 }
             }
         },
