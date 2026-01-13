@@ -73,8 +73,13 @@ return {
             ["deg_-Queen"] = "-Queen",
             ["deg_-King"] = "-King",
             ["deg_-Ace"] = "-Ace",
+            ["deg_-11"] = "-11",
             ["deg_0.5"] = "0.5",
+            ["deg_1"] = "1",
             ["deg_pi"] = "Pi",
+            ["deg_11"] = "11",
+            ["deg_12"] = "12",
+            ["deg_13"] = "13",
             ["deg_21"] = "21",
         },
         v_text = {
