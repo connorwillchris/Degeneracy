@@ -8,6 +8,17 @@ return {
                     "is retriggered {C:attention}#1#{} times"
                 }
             },
+            j_deg_birthday_card = {
+                name = "Birthday Card",
+                text = {
+                    "If sum of scored cards",
+                    "equals {C:attention}21{} and",
+                    "played hand contains",
+                    "{C:attention}5{} cards, gain",
+                    "a random {C:attention}Booster Pack{} Tag",
+                    "{C:inactive}(Aces count as 1)",
+                }
+            },
         },
         Other = {
             deg_locked = {
