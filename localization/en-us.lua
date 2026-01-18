@@ -62,6 +62,10 @@ return {
             c_deg_throwthekey = "Throw the key",
         },
         dictionary = {
+
+            deg_content_edits = "Content edits",
+            deg_content_edits_desc = "Edits some content in base game to work with this mod's content",
+
             --[[k_deg_AAAA = "consumable",
             b_deg_AAAA_cards = "consumable Cards",]] --
         },
