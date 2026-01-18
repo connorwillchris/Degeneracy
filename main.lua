@@ -1,3 +1,7 @@
+DEGENERACY = {vars = {}, funcs = {deg_alias_type = type}, content = SMODS.current_mod}
+
+assert(SMODS.load_file("config.lua"))()
+
 assert(SMODS.load_file("Items/challenges.lua"))()
 --assert(SMODS.load_file("Items/chips.lua"))()
 assert(SMODS.load_file("Items/credits.lua"))()
@@ -20,3 +24,7 @@ SMODS.Atlas({
     py = 216,
     prefix_config = { key = false },
 })
+
+function DEGENERACY.content.save_config(self)
+    SMODS.save_mod_config(self)
+end
