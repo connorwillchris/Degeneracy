@@ -36,7 +36,7 @@ return {
                 text = {
                     "{C:white,s:1}({C:attention,s:1}yellow {C:white,s:1}names are for people who contributed a lot)",
                     "{C:blue,s:2}Ideas",
-                    "{C:attention,s:1}Gud{C:white,s:1}, Astro, Nrio & candycaneanniahlator",
+                    "{C:attention,s:1}Gud{C:white,s:1}, Astro, Nrio, candycaneanniahlator & {C:attention}Tech{}",
                     "{C:blue,s:2}Programmers",
                     "{C:white,s:1}Jamirror, CG, TheOneGoofAli, {C:attention,s:1}Silverautumn NK,",
                     "{C:attention,s:1}cloudzXIII {C:white,s:1}&{C:attention,s:1} connorwillchris",
