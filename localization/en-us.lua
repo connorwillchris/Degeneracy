@@ -52,7 +52,16 @@ return {
                     }
                 }
             },
-
+            j_deg_memory_card = {
+                name = "Memory Card",
+                text = {
+                    "Select {C:attention}1{} card",
+                    "to {C:attention}remember{} it.",
+                    "Add a permanent copy",
+                    "to deck when a",
+                    "{C:attention}Boss Blind{} is defeated",
+                }
+            },
             -- VANILLA
             j_deg_fibonacci = {
                 name = "Fibonacci",
