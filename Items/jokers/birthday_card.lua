@@ -1,48 +1,4 @@
-SMODS.Atlas({
-    key = "deg_jokers",
-    path = "jokers.png",
-    px = 71,
-    py = 95,
-})
-
-
-SMODS.Joker {
-    key = "break_limits",
-
-    loc_vars = function(self, info_queue, card)
-        return {
-            vars = {
-                card.ability.extra.repetitions
-            }
-        }
-    end,
-
-    rarity = 2,
-    cost = 6,
-    atlas = 'deg_jokers',
-    pos = { x = 0, y = 0 },
-
-    config = {
-        extra = {
-            retrigger_card = nil,
-            repetitions = 3,
-        }
-    },
-    calculate = function(self, card, context)
-        if context.before then
-            card.ability.extra.retrigger_card = pseudorandom_element(context.scoring_hand, 'break_limits')
-        end
-        if context.repetition and context.cardarea == G.play then
-            if context.other_card == card.ability.extra.retrigger_card then
-                return {
-                    repetitions = card.ability.extra.repetitions
-                }
-            end
-        end
-    end,
-}
-
---[[ Implemented! but awaiting art so commented out for now
+--Birthday Card - Implemented! but awaiting art
 SMODS.Joker {
     key = "birthday_card",
 
@@ -54,9 +10,9 @@ SMODS.Joker {
     end,
 
     rarity = 1,
-    cost = 4,
+    cost = 6,
     atlas = 'deg_jokers',
-    pos = { x = 0, y = 0 },
+    pos = { x = 1, y = 0 },
 
     config = {
         extra = {
@@ -77,7 +33,7 @@ SMODS.Joker {
                 count = count + rank_val
             end
             if count == 21 then
-                local tag_choice = pseudorandom_element(card.ability.extra.options, pseudoseed('birthday'))
+                local tag_choice = pseudorandom_element(card.ability.extra.options, 'birthday')
                 SMODS.calculate_effect({ message = "+1 Tag!" }, card)
                 G.E_MANAGER:add_event(Event({
                     func = (function()
@@ -89,4 +45,3 @@ SMODS.Joker {
         end
     end,
 }
---]]

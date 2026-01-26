@@ -19,6 +19,58 @@ return {
                     "{C:inactive}(Aces count as 1)",
                 }
             },
+            j_deg_radiation_detector = {
+                name = "Radiation Detector",
+                text = {
+                    "If {C:attention}first hand{} of round is",
+                    "a single card, convert",
+                    "a random card {C:attention}held in hand",
+                    "into played card"
+                }
+            },
+            j_deg_sweep_the_leg = {
+                name = "Sweep The Leg",
+                text = {
+                    "Reduce {C:attention}Blind requirements{}",
+                    "by {C:attention}5%{}, then",
+                    "{C:mult}+#1#{} Mult",
+                }
+            },
+            j_deg_escardgot = {
+                name = "Plate of Escardgot",
+                text = {
+                    {
+                        "{C:white,X:mult}X#2#{} Mult",
+                        "{C:inactive}({C:attention}#1#{}{C:inactive} Rounds Left)"
+                    },
+                    {
+                        "Use this Joker to",
+                        "decrease the remaining",
+                        "{C:attention}rounds{} and rank of",
+                        "{C:attention}1{} selected card",
+                        "by {C:attention}1",
+                    }
+                }
+            },
+
+            -- VANILLA
+            j_deg_fibonacci = {
+                name = "Fibonacci",
+                text = {
+                    "Each played {C:attention}Ace{},",
+                    "{C:attention}1{}, {C:attention}2{}, {C:attention}3{}, {C:attention}5{}, {C:attention}8{},",
+                    "{C:attention}13{} or {C:attention}21{} gives",
+                    "{C:mult}+#1#{} Mult when scored",
+                },
+            },
+            j_deg_business = {
+                name = "Partnership Card",
+                text = {
+                    "Played {C:attention}face{} cards have",
+                    "a {C:green}#1# in #2#{} chance to",
+                    "give {C:money}$2{} when scored",
+                }
+            },
         },
         Other = {
             deg_locked = {
@@ -62,7 +114,6 @@ return {
             c_deg_throwthekey = "Throw the key",
         },
         dictionary = {
-
             deg_content_edits = "Content edits",
             deg_content_edits_desc = "Edits some content in base game to work with this mod's content",
 
