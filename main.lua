@@ -8,8 +8,11 @@ SMODS.Atlas({
     py = 95,
 })
 
+-- Load Utilities
+for _, filename in pairs(NFS.getDirectoryItems(SMODS.current_mod.path .. "utilities")) do
+    assert(SMODS.load_file("utilities/" .. filename))()
+end
 
-assert(SMODS.load_file("utilities/buttons.lua"))()
 assert(SMODS.load_file("config.lua"))()
 assert(SMODS.load_file("Items/challenges.lua"))()
 --assert(SMODS.load_file("Items/chips.lua"))()

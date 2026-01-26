@@ -62,7 +62,6 @@ return {
                     "{C:attention}Boss Blind{} is defeated",
                 }
             },
-
             -- VANILLA
             j_deg_fibonacci = {
                 name = "Fibonacci",
@@ -129,6 +128,15 @@ return {
                 },
             },
         },
+        Mod = {
+            Degeneracy = {
+                name = "Degeneracy",
+                text = {
+                    "Adds {C:attention}Jokers{}, {C:attention}Ranks{}, and more content",
+                    "based on {C:attention}Dungeons and Degenerate Gamblers{}!",
+                }
+            },
+        },
     },
     misc = {
         challenge_names = {
@@ -141,6 +149,7 @@ return {
 
             --[[k_deg_AAAA = "consumable",
             b_deg_AAAA_cards = "consumable Cards",]] --
+            b_deg_wiki_page = "Wiki Page",
         },
         labels = {
             deg_locked = "Locked"
