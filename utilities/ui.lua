@@ -28,7 +28,7 @@ SMODS.current_mod.custom_ui = function(modNodes)
 
     card_to_desc({ "j_deg_break_limits" }, G.P_CENTERS.j_deg_break_limits)
     card_to_desc({ "D_deg_0.5", "C_deg_pi", "H_deg_21" })
-    card_to_desc({ "j_deg_yellow_card" }, G.P_CENTERS.j_deg_yellow_card)
+    card_to_desc({ "j_deg_memory_card" }, G.P_CENTERS.j_deg_memory_card)
 
     -- Cards
     modNodes[#modNodes + 1] = {
