@@ -42,3 +42,7 @@ SMODS.Atlas({
 function DEGENERACY.content.save_config(self)
     SMODS.save_mod_config(self)
 end
+
+if next(SMODS.find_mod("MoreFluff")) then
+    assert(SMODS.load_file("crossmod/morefluff.lua"))()
+end

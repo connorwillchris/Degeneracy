@@ -62,6 +62,7 @@ return {
                     "{C:attention}Boss Blind{} is defeated",
                 }
             },
+
             -- VANILLA
             j_deg_fibonacci = {
                 name = "Fibonacci",
@@ -113,6 +114,18 @@ return {
                     "{C:green}1 in 7{} cards in deck are {C:attention}locked",
                     "{C:inactive,s:0.8}(Can't be manually discarded)",
                     "{s:0.8}Applies all previous Stakes",
+                },
+            },
+        },
+        Colour = {
+            c_deg_poker_green = {
+                name = "Poker Green",
+                text = {
+                    "Add a random {C:attention}21{} to",
+                    "your hand for",
+                    "every {C:attention}#4#{} rounds",
+                    "this has been held",
+                    "{C:inactive}(Currently {C:attention}#1#{C:inactive}, {}[{C:attention}#2#{C:inactive}#3#{}]{C:inactive})",
                 },
             },
         },
