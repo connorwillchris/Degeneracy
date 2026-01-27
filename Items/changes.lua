@@ -25,7 +25,7 @@ SMODS.Joker:take_ownership('fibonacci', {
         end
     end
 })
-
+--[[ broken, will fix later
 SMODS.Joker:take_ownership('odd_todd', {
     config = { extra = { chips = 31 } },
     loc_vars = function(self, info_queue, card)
@@ -60,7 +60,7 @@ SMODS.Joker:take_ownership('even_steven', {
         end
     end
 })
-
+--]]
 -- Name change, otherwise functionally the same
 SMODS.Joker:take_ownership('business', {
     loc_vars = function(self, info_queue, card)
