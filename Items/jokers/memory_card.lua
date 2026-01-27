@@ -1,15 +1,14 @@
---#region Memory Card -
 SMODS.Joker {
     key = "memory_card",
 
     loc_vars = function(self, info_queue, card)
         local list = {}
 
-        if card.ability.extra.saved_ui then
+        if card.ability.extra.saved then
             local area = CardArea(0, 0, 2, 1.5, { type = 'title', card_limit = 1 })
 
-            local desc_card = SMODS.create_card({ set = card.ability.extra.saved_ui.ability.set, skip_materialize = true })
-            desc_card:load(card.ability.extra.saved_ui)
+            local desc_card = SMODS.create_card({ set = card.ability.extra.saved.ability.set, skip_materialize = true })
+            desc_card:load(card.ability.extra.saved)
             desc_card:hard_set_T()
 
             desc_card.T.w = G.CARD_W * 0.5
@@ -38,30 +37,24 @@ SMODS.Joker {
 
     config = {
         extra = {
-            saved = nil,
-            saved_ui = nil
+            saved = nil
         }
     },
     calculate = function(self, card, context)
         if context.end_of_round and context.game_over == false and context.main_eval and not context.blueprint and
             context.beat_boss and card.ability.extra.saved then
+            local card_copied = SMODS.create_card({ set = card.ability.extra.saved.ability.set })
+            card_copied:load(card.ability.extra.saved)
+
             G.playing_card = (G.playing_card and G.playing_card + 1) or 1
-            local card_copied = copy_card(card.ability.extra.saved, nil, nil, G.playing_card)
             card_copied:add_to_deck()
             G.deck.config.card_limit = G.deck.config.card_limit + 1
             table.insert(G.playing_cards, card_copied)
             G.deck:emplace(card_copied)
             card_copied.states.visible = nil
 
-            G.E_MANAGER:add_event(Event({
-                func = function()
-                    card_copied:start_materialize()
-                    return true
-                end
-            }))
             SMODS.calculate_effect({ message = "Copied!", colour = G.C.FILTER }, card)
             card.ability.extra.saved = nil
-            card.ability.extra.saved_ui = nil
         end
     end,
 }
@@ -77,8 +70,7 @@ DEG.Button("j_deg_memory_card", {
     },
     click = function(e)
         local card = e.config and e.config.ref_table
-        card.ability.extra.saved_ui = G.hand.highlighted[1]:save()
-        card.ability.extra.saved = G.hand.highlighted[1]
+        card.ability.extra.saved = G.hand.highlighted[1]:save()
         SMODS.calculate_effect({ message = "Saved!", colour = G.C.FILTER }, card)
     end
 })
