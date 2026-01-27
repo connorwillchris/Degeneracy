@@ -13,6 +13,7 @@ for _, filename in pairs(NFS.getDirectoryItems(SMODS.current_mod.path .. "utilit
     assert(SMODS.load_file("utilities/" .. filename))()
 end
 
+--assert(SMODS.load_file("Items/advantage.lua"))()
 assert(SMODS.load_file("config.lua"))()
 assert(SMODS.load_file("Items/challenges.lua"))()
 --assert(SMODS.load_file("Items/chips.lua"))()
@@ -24,8 +25,6 @@ assert(SMODS.load_file("Items/stickers.lua"))()
 for _, filename in pairs(NFS.getDirectoryItems(SMODS.current_mod.path .. "Items/jokers")) do
     assert(SMODS.load_file("Items/jokers/" .. filename))()
 end
-
-assert(SMODS.load_file("Items/advantage.lua"))()
 
 SMODS.Atlas({
     key = "modicon",
