@@ -14,3 +14,14 @@ pattern = '''
 payload = '''
                     nominal_chips = (self.base.nominal > 0 and "+" or "")..(self.base.nominal or ""),
 '''
+
+# Changes title screen Ace to Negative Ace
+[[patches]]
+[patches.pattern]
+target = 'game.lua'
+pattern = '''local replace_card = Card(self.title_top.T.x, self.title_top.T.y, 1.2*G.CARD_W*SC_scale, 1.2*G.CARD_H*SC_scale, G.P_CARDS.S_A, G.P_CENTERS.c_base)'''
+position = "at"
+payload = ''' 
+local replace_card = Card(self.title_top.T.x, self.title_top.T.y, 1.2*G.CARD_W*SC_scale, 1.2*G.CARD_H*SC_scale, G.P_CARDS["S_deg_-A"], G.P_CENTERS.c_base)
+'''
+match_indent = true
