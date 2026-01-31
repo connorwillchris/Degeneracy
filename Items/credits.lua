@@ -87,7 +87,7 @@ SMODS.current_mod.credits_tab = function()
                     align = "tm",
                     padding = 0,
                     minw = 8,
-                    minh = 5
+                    minh = 3
                 },
                 nodes = {
                     desc_from_rows(loc_nodes, true, 7)
