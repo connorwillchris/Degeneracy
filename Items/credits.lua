@@ -16,6 +16,7 @@ DEG.Credits_Joker = SMODS.Joker:extend({
     blueprint_compat = false,
     eternal_compat = false,
     no_collection = true,
+    no_mod_badges = true,
 
     config = {},
     in_pool = function(self)
