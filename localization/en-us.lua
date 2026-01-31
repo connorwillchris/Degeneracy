@@ -1,6 +1,20 @@
 return {
     descriptions = {
         Joker = {
+            -- CREDITS JOKERS
+            j_deg_cloudzXIII = {
+                name = "cloudzXIII",
+                text = {
+                    ""
+                }
+            },
+            j_deg_Gud = {
+                name = "Gud",
+                text = {
+                    ""
+                }
+            },
+            --ADDITIONS
             j_deg_break_limits = {
                 name = "Break Limits",
                 text = {
@@ -147,6 +161,8 @@ return {
             deg_content_edits = "Content edits",
             deg_content_edits_desc = "Edits some content in base game to work with this mod's content",
 
+            k_programmer_badge = "Programmer",
+            k_artist_badge = "Artist",
             --[[k_deg_AAAA = "consumable",
             b_deg_AAAA_cards = "consumable Cards",]] --
             b_deg_wiki_page = "Wiki Page",
