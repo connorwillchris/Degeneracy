@@ -56,6 +56,14 @@ function Card:highlight(highlighted)
     end
 
     if DEG.button_info[self.config.center.key] then
+        -- Don't show buttons if in shop
+        if G.shop_jokers then
+            for i = 1, #G.shop_jokers.cards do
+                if G.shop_jokers.cards[i] == self then
+                    return
+                end
+            end
+        end
         if highlighted then
             local btn = DEG.button_info[self.config.center.key]
             local has_cost = btn.cost and btn.cost > 0
