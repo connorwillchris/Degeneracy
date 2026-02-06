@@ -163,6 +163,7 @@ return {
 
             k_programmer_badge = "Programmer",
             k_artist_badge = "Artist",
+            k_ideas_badge = "Ideas",
             --[[k_deg_AAAA = "consumable",
             b_deg_AAAA_cards = "consumable Cards",]] --
             b_deg_wiki_page = "Wiki Page",

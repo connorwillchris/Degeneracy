@@ -33,7 +33,7 @@ DEG.Credits_Joker = SMODS.Joker:extend({
         elseif self.artist then
             badges[#badges + 1] = create_badge(localize('k_artist_badge'), G.C.PURPLE, G.C.WHITE, 1.2)
         elseif self.ideas then
-            badges[#badges + 1] = create_badge("k_ideas_badge", G.C.GREEN, G.C.WHITE, 1.2)
+            badges[#badges + 1] = create_badge(localize("k_ideas_badge"), G.C.GREEN, G.C.WHITE, 1.2)
         end
     end,
 })
