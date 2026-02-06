@@ -1,3 +1,10 @@
+SMODS.Atlas {
+    key = "credits",
+    path = "thanks-to-these-people.png",
+    px = 71,
+    py = 95
+}
+
 DEG.Credits_Joker = SMODS.Joker:extend({
     required_params = {
         "key",
@@ -7,8 +14,8 @@ DEG.Credits_Joker = SMODS.Joker:extend({
         return { vars = {} }
     end,
 
-    atlas = 'deg_jokers', -- set atlas here
-    pos = { x = 0, y = 0 },
+    atlas = 'credits',
+
     unlocked = true,
     discovered = true,
     blueprint_compat = false,
@@ -26,21 +33,77 @@ DEG.Credits_Joker = SMODS.Joker:extend({
         elseif self.artist then
             badges[#badges + 1] = create_badge(localize('k_artist_badge'), G.C.PURPLE, G.C.WHITE, 1.2)
         elseif self.ideas then
-            badges[#badges + 1] = create_badge("Ideas", G.C.GREEN, G.C.WHITE, 1.2)
+            badges[#badges + 1] = create_badge("k_ideas_badge", G.C.GREEN, G.C.WHITE, 1.2)
         end
     end,
 })
 
 -- New Thing! can now just say programmer = true, artist = true, ideas = true etc. to add badge
 DEG.Credits_Joker {
-    key = "cloudzXIII",
+    key = "gud",
+    atlas = 'credits',
     pos = { x = 0, y = 0 },
+    artist = true
+}
+DEG.Credits_Joker {
+    key = "astro",
+    atlas = 'credits',
+    pos = { x = 1, y = 0 },
+    ideas = true
+}
+DEG.Credits_Joker {
+    key = "cloudzXIII",
+    atlas = 'credits',
+    pos = { x = 2, y = 0 },
     programmer = true,
 }
 DEG.Credits_Joker {
-    key = "Gud",
-    pos = { x = 0, y = 0 },
-    artist = true
+    key = "nrio",
+    atlas = 'credits',
+    pos = { x = 3, y = 0 },
+    ideas = true
+}
+DEG.Credits_Joker {
+    key = "candy",
+    atlas = 'credits',
+    pos = { x = 4, y = 0 },
+    ideas = true
+}
+DEG.Credits_Joker {
+    key = "cg",
+    atlas = 'credits',
+    pos = { x = 0, y = 1 },
+    programmer = true,
+}
+DEG.Credits_Joker {
+    key = "tech",
+    atlas = 'credits',
+    pos = { x = 1, y = 1 },
+    ideas = true
+}
+DEG.Credits_Joker {
+    key = "treeman",
+    atlas = 'credits',
+    pos = { x = 2, y = 1 },
+    programmer = true,
+}
+DEG.Credits_Joker {
+    key = "jamirror",
+    atlas = 'credits',
+    pos = { x = 3, y = 1 },
+    programmer = true,
+}
+DEG.Credits_Joker {
+    key = "ali",
+    atlas = 'credits',
+    pos = { x = 4, y = 1 },
+    programmer = true,
+}
+DEG.Credits_Joker {
+    key = "silver",
+    atlas = 'credits',
+    pos = { x = 0, y = 2 },
+    programmer = true,
 }
 
 SMODS.current_mod.credits_tab = function()
@@ -69,10 +132,9 @@ SMODS.current_mod.credits_tab = function()
     end
 
     local credits_ppl = {
-        { ppl = { "j_joker", "j_deg_cloudzXIII", "j_deg_Gud", "j_joker", "j_joker" } },
-        -- (If you want another row uncomment below)
-        --{ ppl = { "j_joker", "j_deg_Gud", "j_joker" } },
-        { ppl = { "j_joker", "j_joker", "j_joker", "j_joker", "j_joker", "j_joker" } }
+        { ppl = { "j_deg_gud", "j_deg_astro", "j_deg_cloudzXIII", "j_deg_nrio", "j_deg_candy", } },
+        { ppl = { "j_deg_cg", "j_deg_tech", "j_deg_treeman", "j_deg_jamirror", "j_deg_ali", } },
+        { ppl = { "j_deg_silver", } }
     }
 
     --#region Bit with the localised text, can remove/change if unneccessary
