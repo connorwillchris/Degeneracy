@@ -24,7 +24,7 @@ SMODS.Joker:take_ownership('fibonacci', {
             end
         end
     end
-})
+}, true)
 
 DEGENERACY.faces = {
     Jack = true,

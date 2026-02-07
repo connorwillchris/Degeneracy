@@ -25,3 +25,35 @@ payload = '''
 local replace_card = Card(self.title_top.T.x, self.title_top.T.y, 1.2*G.CARD_W*SC_scale, 1.2*G.CARD_H*SC_scale, G.P_CARDS["S_deg_-A"], G.P_CENTERS.c_base)
 '''
 match_indent = true
+
+#G.GAME stuff
+[[patches]]
+[patches.pattern]
+target = 'game.lua'
+pattern = '''unused_discards = 0,'''
+position = "after"
+payload = '''
+deg = {
+    og_negative_vals = {}
+},
+'''
+match_indent = true
+
+# Untitled Joker
+[[patches]]
+[patches.pattern]
+target = '=[SMODS _ "src/utils.lua"]'
+pattern = """    if specific_vars and specific_vars.bonus_h_dollars then
+        localize{type = 'other', key = 'card_extra_h_dollars', nodes = desc_nodes, vars = {SMODS.signed_dollars(specific_vars.bonus_h_dollars)}}
+    end"""
+position = "after"
+payload = """
+if specific_vars and G.GAME.deg_t2 and specific_vars.value then
+    local nominal = specific_vars.value
+    local original_chip = G.GAME.deg.og_negative_vals[nominal] or 0
+    if original_chip < 0 then
+        localize{type = 'other', key = 'deg_negative_mult', nodes = desc_nodes, vars = { "+" .. -G.GAME.deg.og_negative_vals[nominal] }}
+    end
+end
+"""
+match_indent = true

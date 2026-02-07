@@ -20,6 +20,7 @@ assert(SMODS.load_file("Items/challenges.lua"))()
 assert(SMODS.load_file("Items/ranks.lua"))()
 assert(SMODS.load_file("Items/stakes.lua"))()
 assert(SMODS.load_file("Items/stickers.lua"))()
+assert(SMODS.load_file("Items/decks.lua"))()
 
 for _, filename in pairs(NFS.getDirectoryItems(SMODS.current_mod.path .. "Items/jokers")) do
     assert(SMODS.load_file("Items/jokers/" .. filename))()

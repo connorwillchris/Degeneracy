@@ -1,5 +1,15 @@
 return {
     descriptions = {
+        Back = {
+            b_deg_giant_rat = {
+                name = "Giant Rat Deck",
+                text = {
+                    "Played cards are",
+                    "{C:attention}returned{} to deck",
+                },
+            },
+        },
+
         Joker = {
             -- CREDITS JOKERS
             j_deg_cloudzXIII = {
@@ -8,7 +18,7 @@ return {
                     ""
                 }
             },
-            j_deg_Gud = {
+            j_deg_gud = {
                 name = "Gud",
                 text = {
                     ""
@@ -76,6 +86,71 @@ return {
                     "{C:attention}Boss Blind{} is defeated",
                 }
             },
+            j_deg_fake_id = {
+                name = "Fake ID",
+                text = {
+                    "Prevent Death {C:attention}once{}",
+                    "and set money to {C:red}$0{}",
+                    "{C:red,E:2}self destructs{}",
+                }
+            },
+            j_deg_expulsion = {
+                name = "Expulsion",
+                text = {
+                    "{C:attention}2X{} Base Blind Size,",
+                    "{C:attention}+2{} Hand Size"
+                }
+            },
+            j_deg_report_card = {
+                name = "Report Card",
+                text = {
+                    {
+                        "Add a random {C:attention}Ace{} to",
+                        "your deck",
+                        "at end of round,",
+                    },
+                    {
+                        "If you have at least {C:attention}$#1#{},",
+                        "add a {C:dark_edition}Foil{} {C:attention}Ace{}",
+                        "instead and {C:red}-$#1#{}"
+                    }
+                }
+            },
+            j_deg_communist_party_card = {
+                name = "Communist Party Card",
+                text = {
+                    "If {C:attention}first hand{} of round",
+                    "convert all cards",
+                    "{C:attention}held in hand{} into",
+                    "a random rank in scored hand"
+                }
+            },
+            j_deg_blood_donor = {
+                name = "Blood Donor",
+                text = {
+                    "Played cards with",
+                    "{C:hearts}Heart{} suit",
+                    "decrease in rank by {C:attention}1{}",
+                    "and give {C:white,X:mult}X#1#{} Mult when scored",
+                }
+            },
+            j_deg_cardiovascular_exercise = {
+                name = "Cardiovascular Exercise",
+                text = {
+                    "{C:mult}#1#{} Mult",
+                    "Earn {C:money}$#2#{} per {C:attention}hand{}",
+                    "at end of round"
+                }
+            },
+            j_deg_untitled = {
+                name = "???",
+                text = {
+                    "Cards with a {C:dark_edition}Negative{} rank",
+                    "score {C:mult}+Mult{}",
+                    "instead of {C:chips}-Chips",
+                    "{C:inactive}(ex: {C:chips}-4{}{C:inactive} Chips -> {C:mult}+4{}{C:inactive} Mult)"
+                }
+            },
             -- VANILLA
             j_deg_fibonacci = {
                 name = "Fibonacci",
@@ -96,6 +171,11 @@ return {
             },
         },
         Other = {
+            deg_negative_mult = {
+                text = {
+                    "{C:mult}#1#{} Mult",
+                },
+            },
             deg_locked = {
                 name = "Locked",
                 text = {
