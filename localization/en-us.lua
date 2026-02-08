@@ -122,7 +122,7 @@ return {
                     "If {C:attention}first hand{} of round",
                     "convert all cards",
                     "{C:attention}held in hand{} into",
-                    "a random rank in scored hand"
+                    "a random suit from scored hand"
                 }
             },
             j_deg_blood_donor = {
