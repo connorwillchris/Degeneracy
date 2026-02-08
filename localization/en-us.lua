@@ -1,7 +1,7 @@
 return {
     descriptions = {
         Back = {
-            b_deg_giant_rat = {
+            b_deg_giantrat = {
                 name = "Giant Rat's Deck",
                 text = {
                     "Played cards are",
@@ -10,14 +10,14 @@ return {
             },
         },
         Sleeve = {
-            sleeve_deg_giant_rat = {
+            sleeve_deg_giantrat = {
                 name = "Giant Rat's Sleeve",
                 text = {
                     "Played cards are",
                     "{C:attention}returned{} to deck",
                 },
             },
-            sleeve_deg_giant_rat_alt = {
+            sleeve_deg_giantrat_alt = {
                 name = "Giant Rat's  Sleeve",
                 text = {
                     "Played cards are",

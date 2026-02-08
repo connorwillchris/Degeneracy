@@ -6,7 +6,7 @@ SMODS.Atlas {
 }
 
 SMODS.Back {
-    key = "giant_rat",
+    key = "giantrat",
     atlas = "decks",
     pos = { x = 0, y = 0 },
 
