@@ -37,7 +37,7 @@ SMODS.Joker {
                 for i = 1, #G.hand.cards do
                     G.E_MANAGER:add_event(Event({
                         func = function()
-                            copy_card(rnd_card, G.hand.cards[i])
+                            assert(SMODS.change_base(G.hand.cards[i], nil, rnd_card.config.card.value))
                             return true
                         end
                     }))
