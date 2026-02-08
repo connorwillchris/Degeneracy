@@ -445,7 +445,7 @@ SMODS.Rank {
         random = false,
         ignore = false
     },
-    next = { "Ace" },
+    next = { "2" },
     lc_atlas = "cards_lc",
     hc_atlas = "cards_hc",
 }
