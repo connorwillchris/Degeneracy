@@ -167,6 +167,70 @@ return {
                     "{C:inactive}(ex: {C:chips}-4{}{C:inactive} Chips -> {C:mult}+4{}{C:inactive} Mult)"
                 }
             },
+            j_deg_joker1 = {
+                name = "Joker 1",
+                text = {
+                    "Played {C:attention}Bonus Cards{}",
+                    "give {C:mult}+#1#{} Mult",
+                    "when scored"
+                }
+            },
+            j_deg_joker2 = {
+                name = "Joker 2",
+                text = {
+                    "Played {C:attention}Mult Cards{}",
+                    "give {C:chips}+#1#{} Chips",
+                    "when scored"
+                }
+            },
+            j_deg_joker3 = {
+                name = "Joker 3",
+                text = {
+                    "Played {C:attention}Wild Cards{}",
+                    "give {C:mult}+#1#{} Mult and {C:chips}+#2#{} Chips",
+                    "when scored"
+                }
+            },
+            j_deg_joker4 = {
+                name = "Joker 4",
+                text = {
+                    "Played {C:attention}Glass Cards{}",
+                    "give an additional {C:white,X:mult}X#1#{} Mult",
+                    "when scored"
+                }
+            },
+            j_deg_joker5 = {
+                name = "Joker 5",
+                text = {
+                    "{C:attention}Steel Cards{}",
+                    "give {C:money}$#1#{}",
+                    "when held in hand"
+                }
+            },
+            j_deg_joker6 = {
+                name = "Joker 6",
+                text = {
+                    "Played {C:attention}Stone Cards{}",
+                    "give {C:mult}+#1#{} Mult",
+                    "when scored"
+                }
+            },
+            j_deg_joker7 = {
+                name = "Joker 7",
+                text = {
+                    "{C:attention}Gold Cards{}",
+                    "give {C:white,X:mult}X#1#{} Mult",
+                    "when held in hand"
+                }
+            },
+            j_deg_joker8 = {
+                name = "Joker 8",
+                text = {
+                    "Played {C:attention}Lucky Cards{}",
+                    "give {C:mult}+#1#{} Mult and {C:money}$#2#{}",
+                    "when scored"
+                }
+            },
             -- VANILLA
             j_deg_fibonacci = {
                 name = "Fibonacci",
