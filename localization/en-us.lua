@@ -9,7 +9,22 @@ return {
                 },
             },
         },
-
+        Sleeve = {
+            sleeve_deg_giant_rat = {
+                name = "Giant Rat's Sleeve",
+                text = {
+                    "Played cards are",
+                    "{C:attention}returned{} to deck",
+                },
+            },
+            sleeve_deg_giant_rat_alt = {
+                name = "Giant Rat's  Sleeve",
+                text = {
+                    "Played cards are",
+                    "{C:attention}drawn{} to hand",
+                },
+            },
+        },
         Joker = {
             -- CREDITS JOKERS
             j_deg_cloudzXIII = {
