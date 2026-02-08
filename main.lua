@@ -13,10 +13,8 @@ for _, filename in pairs(NFS.getDirectoryItems(SMODS.current_mod.path .. "utilit
     assert(SMODS.load_file("utilities/" .. filename))()
 end
 
---assert(SMODS.load_file("Items/advantage.lua"))()
 assert(SMODS.load_file("config.lua"))()
 assert(SMODS.load_file("Items/challenges.lua"))()
---assert(SMODS.load_file("Items/chips.lua"))()
 assert(SMODS.load_file("Items/ranks.lua"))()
 assert(SMODS.load_file("Items/stakes.lua"))()
 assert(SMODS.load_file("Items/stickers.lua"))()
@@ -47,4 +45,8 @@ end
 
 if next(SMODS.find_mod("MoreFluff")) then
     assert(SMODS.load_file("crossmod/morefluff.lua"))()
+end
+
+if next(SMODS.find_mod("CardSleeves")) then
+    assert(SMODS.load_file("crossmod/sleeves.lua"))()
 end
