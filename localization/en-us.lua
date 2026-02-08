@@ -50,8 +50,8 @@ return {
             j_deg_birthday_card = {
                 name = "Birthday Card",
                 text = {
-                    "If sum of scored cards",
-                    "equals {C:attention}21{} and",
+                    "If all scored cards",
+                    "add up to {C:attention}21{} and",
                     "played hand contains",
                     "{C:attention}5{} cards, gain",
                     "a random {C:attention}Booster Pack{} Tag",
@@ -229,6 +229,14 @@ return {
                     "Played {C:attention}Lucky Cards{}",
                     "give {C:mult}+#1#{} Mult and {C:money}$#2#{}",
                     "when scored"
+                }
+            },
+            j_deg_d_of_6 = {
+                name = "Diamond of 6's",
+                text = {
+                    "If all scored cards",
+                    "add up to {C:attention}15{},",
+                    "gain {C:money}$#1#{}"
                 }
             },
             -- VANILLA
