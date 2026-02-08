@@ -24,6 +24,7 @@ CardSleeves.Sleeve {
     calculate = function(self, back, context)
         if context.final_scoring_step then
             if self.get_current_deck_key() == "b_deg_giantrat" then
+                -- this is for both deck and sleeve
                 G.E_MANAGER:add_event(Event({
                     func = function()
                         local hand_count = #G.play.cards
@@ -32,7 +33,7 @@ CardSleeves.Sleeve {
                             draw_card(G.discard, G.deck, i * 100 / hand_count, "down", nil, nil, 0.08)
                         end
 
-                        --G.deck:shuffle("deg" .. G.GAME.round_resets.ante)
+                        G.deck:shuffle("deg" .. G.GAME.round_resets.ante)
 
                         return true
                     end
