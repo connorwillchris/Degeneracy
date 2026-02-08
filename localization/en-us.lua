@@ -2,7 +2,7 @@ return {
     descriptions = {
         Back = {
             b_deg_giant_rat = {
-                name = "Giant Rat Deck",
+                name = "Giant Rat's Deck",
                 text = {
                     "Played cards are",
                     "{C:attention}returned{} to deck",
@@ -234,6 +234,12 @@ return {
         },
     },
     misc = {
+        achievement_names = {
+            ach_deg_you_win = "You win?"
+        },
+        achievement_descriptions = {
+            ach_deg_you_win = "Have your score be set on fire, but still not win the round"
+        },
         challenge_names = {
             c_deg_inversion = "Inversion",
             c_deg_throwthekey = "Throw the key",
