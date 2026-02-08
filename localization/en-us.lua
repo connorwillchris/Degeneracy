@@ -138,8 +138,9 @@ return {
                 name = "Cardiovascular Exercise",
                 text = {
                     "{C:mult}#1#{} Mult",
-                    "Earn {C:money}$#2#{} per {C:attention}hand{}",
-                    "at end of round"
+                    "Earn {C:money}$#2#{} per {C:attention}trigger{}",
+                    "at end of round",
+                    "{C:inactive}(Currently {C:money}$#3#{}{C:inactive})"
                 }
             },
             j_deg_untitled = {
