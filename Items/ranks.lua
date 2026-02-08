@@ -30,6 +30,7 @@ next = function(a, ...)
     end
 end
 
+
 SMODS.Rank {
     in_pool = function(self, args)
         if args and ((args.suit == '') or (args.initial_deck)) then -- i assume you don't want these to appear in the normal deck
@@ -68,7 +69,7 @@ SMODS.Rank {
     }
 }
 
-for _, v in ipairs({ -2 -3, -4, -5, -6, -7, -8, -9 }) do
+for _, v in ipairs({ -2, -3, -4, -5, -6, -7, -8, -9 }) do
     SMODS.Rank {
         in_pool = function(self, args)
             if args and ((args.suit == '') or (args.initial_deck)) then -- i assume you don't want these to appear in the normal deck
