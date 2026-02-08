@@ -39,11 +39,11 @@ SMODS.Rank {
             return true -- assuming you want this ranks to always be able to appear in standards and such
         end
     end,
-    key = '-2',
-    shorthand = '-2',
-    card_key = '-2',
+    key = '-1',
+    shorthand = '-1',
+    card_key = '-1',
     pos = { x = 0 },
-    nominal = -2,
+    nominal = -1,
     suit_map = {
         Hearts = 0,
         Clubs = 1,
@@ -68,7 +68,7 @@ SMODS.Rank {
     }
 }
 
-for _, v in ipairs({ -3, -4, -5, -6, -7, -8, -9 }) do
+for _, v in ipairs({ -2 -3, -4, -5, -6, -7, -8, -9 }) do
     SMODS.Rank {
         in_pool = function(self, args)
             if args and ((args.suit == '') or (args.initial_deck)) then -- i assume you don't want these to appear in the normal deck
@@ -81,7 +81,7 @@ for _, v in ipairs({ -3, -4, -5, -6, -7, -8, -9 }) do
         key = v .. "",
         shorthand = v .. "",
         card_key = v .. "",
-        pos = { x = (v * -1) - 2 },
+        pos = { x = (v * -1) - 1 },
         nominal = v,
         suit_map = {
             Hearts = 0,
@@ -103,7 +103,7 @@ for _, v in ipairs({ -3, -4, -5, -6, -7, -8, -9 }) do
         hc_atlas = "cards_hc",
         akyrs_pure_rank_atlas = {
             atlas_key = 'deg_pure_ranks',
-            pos = { x = (v * -1) - 2, y = 0 }
+            pos = { x = (v * -1) - 1, y = 0 }
         }
     }
 end
@@ -120,7 +120,7 @@ SMODS.Rank {
     key = '-10',
     shorthand = '-10',
     card_key = '-T',
-    pos = { x = 8 },
+    pos = { x = 9 },
     nominal = -10,
     suit_map = {
         Hearts = 0,
@@ -157,7 +157,7 @@ SMODS.Rank {
     end,
     key = '-Jack',
     card_key = '-J',
-    pos = { x = 9 },
+    pos = { x = 10 },
     nominal = -10,
     suit_map = {
         Hearts = 0,
@@ -197,7 +197,7 @@ SMODS.Rank {
     end,
     key = '-Queen',
     card_key = '-Q',
-    pos = { x = 10 },
+    pos = { x = 11 },
     nominal = -10,
     suit_map = {
         Hearts = 0,
@@ -237,7 +237,7 @@ SMODS.Rank {
     end,
     key = '-King',
     card_key = '-K',
-    pos = { x = 11 },
+    pos = { x = 12 },
     nominal = -10,
     suit_map = {
         Hearts = 0,
@@ -277,7 +277,7 @@ SMODS.Rank {
     end,
     key = '-Ace',
     card_key = '-A',
-    pos = { x = 12 },
+    pos = { x = 13 },
     nominal = -11,
     suit_map = {
         Hearts = 0,
@@ -317,7 +317,7 @@ SMODS.Rank {
     end,
     key = '-11',
     card_key = '-11',
-    pos = { x = 13 },
+    pos = { x = 14 },
     nominal = -11,
     suit_map = {
         Hearts = 0,
@@ -356,7 +356,7 @@ SMODS.Rank {
     end,
     key = '0',
     card_key = '0',
-    pos = { x = 14 },
+    pos = { x = 15 },
     nominal = 0,
     suit_map = {
         Hearts = 0,
@@ -391,7 +391,7 @@ SMODS.Rank {
     end,
     key = '0.5',
     card_key = '0.5',
-    pos = { x = 15 },
+    pos = { x = 16 },
     nominal = 0.5,
     suit_map = {
         Hearts = 0,
@@ -410,7 +410,7 @@ SMODS.Rank {
         random = false,
         ignore = false
     },
-    next = { "Ace" },
+    next = { "deg_1" },
     lc_atlas = "cards_lc",
     hc_atlas = "cards_hc",
 }
@@ -426,7 +426,7 @@ SMODS.Rank {
     end,
     key = '1',
     card_key = '1',
-    pos = { x = 16 },
+    pos = { x = 17 },
     nominal = 1,
     suit_map = {
         Hearts = 0,
@@ -461,7 +461,7 @@ SMODS.Rank {
     end,
     key = 'pi',
     card_key = 'pi',
-    pos = { x = 17 },
+    pos = { x = 18 },
     nominal = 3.141,
     suit_map = {
         Hearts = 0,
@@ -497,7 +497,7 @@ SMODS.Rank {
     end,
     key = '11',
     card_key = '11',
-    pos = { x = 18 },
+    pos = { x = 19 },
     nominal = 11,
     suit_map = {
         Hearts = 0,
@@ -532,7 +532,7 @@ SMODS.Rank {
     end,
     key = '12',
     card_key = '12',
-    pos = { x = 19 },
+    pos = { x = 20 },
     nominal = 12,
     suit_map = {
         Hearts = 0,
@@ -567,7 +567,7 @@ SMODS.Rank {
     end,
     key = '13',
     card_key = '13',
-    pos = { x = 20 },
+    pos = { x = 21 },
     nominal = 13,
     suit_map = {
         Hearts = 0,
@@ -602,7 +602,7 @@ SMODS.Rank {
     end,
     key = '21',
     card_key = '21',
-    pos = { x = 21 },
+    pos = { x = 22 },
     nominal = 21,
     suit_map = {
         Hearts = 0,
