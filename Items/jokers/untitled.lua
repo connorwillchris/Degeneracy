@@ -23,8 +23,8 @@ SMODS.Joker {
 
     rarity = 2,
     cost = 7,
-    atlas = 'deg_jokers',
-    pos = { x = 0, y = 2 },
+    --atlas = 'deg_jokers',
+    pos = { x = 0, y = 0 },
 
     config = {
         extra = {
