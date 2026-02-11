@@ -1,5 +1,14 @@
 return {
     descriptions = {
+        Blind = {
+            bl_deg_tangelo_token = {
+                name = "Tangelo Token",
+                text = {
+                    "Applies the locked sticker to",
+                    "all cards in first drawn hand"
+                }
+            }
+        },
         Back = {
             b_deg_giantrat = {
                 name = "Giant Rat's Deck",
