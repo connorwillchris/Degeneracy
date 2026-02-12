@@ -587,6 +587,7 @@ SMODS.Rank {
         random = false,
         ignore = false
     },
+    straight_edge = true,
     next = { "deg_13" },
     lc_atlas = "cards_lc",
     hc_atlas = "cards_hc",
