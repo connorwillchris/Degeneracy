@@ -248,6 +248,26 @@ return {
                     "gain {C:money}$#1#{}"
                 }
             },
+            j_deg_soul = {
+                name = "Soul",
+                text = {
+                    "When {C:attention}Blind{} is selected,",
+                    "create a random",
+                    "{C:spectral}Perishable{} Joker",
+                    "{C:inactive}(Does not need room)"
+                }
+            },
+            j_deg_black_hole = {
+                name = "Black Hole",
+                text = {
+                    "{C:green}#1# in #2#{} chance to",
+                    "upgrade level of",
+                    "played {C:attention}poker hand{}",
+                    "by {C:attention}2{} and {C:attention}decrease",
+                    "the level of a",
+                    "random {C:attention}poker hand{}"
+                }
+            },
             -- VANILLA
             j_deg_fibonacci = {
                 name = "Fibonacci",
