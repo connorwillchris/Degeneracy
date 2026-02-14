@@ -18,7 +18,7 @@ SMODS.Joker {
         }
     },
     calculate = function(self, card, context)
-        if context.after and context.main_eval and not context.blueprint and G.GAME.current_round.hands_played == 0 then
+        if context.final_scoring_step and G.GAME.current_round.hands_played == 0 then
             if #G.hand.cards > 0 then
                 local rnd_card = pseudorandom_element(context.scoring_hand)
                 for i = 1, #G.hand.cards do

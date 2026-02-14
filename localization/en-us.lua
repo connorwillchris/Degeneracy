@@ -143,10 +143,9 @@ return {
             j_deg_communist_party_card = {
                 name = "Communist Party Card",
                 text = {
-                    "If {C:attention}first hand{} of round",
-                    "convert all cards",
-                    "{C:attention}held in hand{} into",
-                    "a random suit from scored hand"
+                    "Convert cards {C:attention}held in hand{} to",
+                    "match a random played card's",
+                    "{C:attention}suit{} on {C:attention}first hand{} of round"
                 }
             },
             j_deg_blood_donor = {
