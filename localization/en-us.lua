@@ -218,9 +218,11 @@ return {
             j_deg_joker6 = {
                 name = "Joker 6",
                 text = {
-                    "Played {C:attention}Stone Cards{}",
-                    "give {C:mult}+#1#{} Mult",
-                    "when scored"
+                    "Played {C:attention}Stone Cards{} have",
+                    "a {C:green}#1# in #2#{} chance to",
+                    "create the {C:tarot}The Tower{}",
+                    "when scored",
+                    "{C:inactive}(Must have room)"
                 }
             },
             j_deg_joker7 = {
