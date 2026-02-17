@@ -41,9 +41,28 @@ CardSleeves.Sleeve {
     calculate = function(self, back, context)
         if self.get_current_deck_key() == "b_deg_giantrat" then
             -- this is for both deck and sleeve
-            if context.after and context.main_eval and not context.blueprint then
-                for _, played_card in ipairs(context.full_hand) do
+            if context.after and context.main_eval and not context.blueprint and #context.full_hand >= 1 then
+                --[[for _, played_card in ipairs(context.full_hand) do
                     played_card.deg_return_to_hand = true
+                end]]
+                local count = 0
+                while count < math.floor(#context.full_hand / 2) do
+                    local random_card = pseudorandom_element(context.full_hand, "seed")
+                    if not random_card.deg_return_to_hand then
+                        random_card.deg_return_to_hand = true
+
+                        G.E_MANAGER:add_event(Event({
+                            func = function()
+                                random_card:juice_up()
+                                return true
+                            end,
+                        }))
+                        card_eval_status_text(random_card, "extra", nil, nil, nil, {
+                            message = "!",
+                            colour = G.C.FILTER,
+                        })
+                        count = count + 1
+                    end
                 end
                 return {
                     message = "Returned!",

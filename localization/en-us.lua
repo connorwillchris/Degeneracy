@@ -27,10 +27,11 @@ return {
                 },
             },
             sleeve_deg_giantrat_alt = {
-                name = "Giant Rat's  Sleeve",
+                name = "Giant Rat's Sleeve",
                 text = {
-                    "Played cards are",
-                    "{C:attention}drawn{} to hand",
+                    "Half of played cards are",
+                    "{C:attention}returned{} to hand",
+                    "{C:inactive}(Rounds down)"
                 },
             },
         },
