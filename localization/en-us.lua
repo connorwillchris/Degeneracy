@@ -31,7 +31,7 @@ return {
                 text = {
                     "Half of played cards are",
                     "{C:attention}returned{} to hand",
-                    "{C:inactive}(Rounds down)"
+                    "{C:inactive}(Rounded down)"
                 },
             },
         },
