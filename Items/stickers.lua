@@ -1,10 +1,3 @@
-SMODS.Atlas({
-    key = "deg_stickers",
-    path = "Stickers.png",
-    px = 71,
-    py = 95,
-})
-
 local function haslocksticker()
     if G and G.hand and G.hand.highlighted and next(G.hand.highlighted) then
         for k, v in pairs(G.hand.highlighted) do
@@ -30,7 +23,7 @@ SMODS.Sticker {
     badge_colour = HEX "f6c46a",
     atlas = "deg_stickers",
     pos = { x = 0, y = 0 },
-    sets =  { ["Default"] = true, ["Enhanced"] = true, ["Base"] = true },
+    sets = { ["Default"] = true, ["Enhanced"] = true, ["Base"] = true },
     needs_enable_flag = true,
 
     --[[apply = function (self, card, val)

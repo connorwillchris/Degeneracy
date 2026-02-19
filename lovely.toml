@@ -68,7 +68,7 @@ G.hand_text_area.hand_level.config.colour = G.C.HAND_LEVELS[math.min(vals.level,
 '''
 position = "at"
 payload = '''
-G.hand_text_area.hand_level.config.colour = vals.level < 1 and G.C.RED or G.C.HAND_LEVELS[math.min(vals.level, 7)]
+G.hand_text_area.hand_level.config.colour = to_big(vals.level) < to_big(1) and G.C.RED or G.C.HAND_LEVELS[math.min(vals.level, 7)]
 '''
 match_indent = true
 
@@ -80,6 +80,6 @@ pattern = '''
 '''
 position = "at"
 payload = '''
-{n=G.UIT.C, config={align = "cm", padding = 0.01, r = 0.1, colour = G.GAME.hands[handname].level < 1 and G.C.RED or G.C.HAND_LEVELS[math.min(7, G.GAME.hands[handname].level)], minw = 1.5, outline = 0.8, outline_colour = G.C.WHITE}, nodes={
+{n=G.UIT.C, config={align = "cm", padding = 0.01, r = 0.1, colour = to_big(G.GAME.hands[handname].level) < to_big(1) and G.C.RED or G.C.HAND_LEVELS[math.min(7, G.GAME.hands[handname].level)], minw = 1.5, outline = 0.8, outline_colour = G.C.WHITE}, nodes={
 '''
 match_indent = true

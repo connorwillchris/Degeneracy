@@ -1,10 +1,3 @@
-SMODS.Atlas({
-    key = "deg_stakes",
-    path = "stakes.png",
-    px = 29,
-    py = 29,
-})
-
 SMODS.Stake({
     key = "brass",
     atlas = "deg_stakes",

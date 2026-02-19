@@ -1,25 +1,3 @@
-SMODS.Atlas {
-    key = "cards_lc",
-    path = "ranks_lc.png",
-    px = 71,
-    py = 95
-}
-
-SMODS.Atlas {
-    key = "cards_hc",
-    path = "ranks_hc.png",
-    px = 71,
-    py = 95
-}
-
-SMODS.Atlas {
-    key = "deg_pure_ranks",
-    path = "pure_ranks.png",
-    px = 71,
-    py = 95
-}
-
-
 local ref = next
 
 next = function(a, ...)

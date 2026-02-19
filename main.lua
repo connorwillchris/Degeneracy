@@ -1,12 +1,10 @@
 DEGENERACY = { vars = {}, funcs = { deg_alias_type = type }, content = SMODS.current_mod }
 DEG = {}
 
-SMODS.Atlas({
-    key = "deg_jokers",
-    path = "jokers.png",
-    px = 71,
-    py = 95,
-})
+
+-- tailsman thingy
+to_big = to_big or function(x) return x end
+to_number = to_number or function(x) return x end
 
 -- Load Utilities
 for _, filename in pairs(NFS.getDirectoryItems(SMODS.current_mod.path .. "utilities")) do
@@ -25,20 +23,7 @@ for _, filename in pairs(NFS.getDirectoryItems(SMODS.current_mod.path .. "Items/
     assert(SMODS.load_file("Items/jokers/" .. filename))()
 end
 
-SMODS.Atlas({
-    key = "modicon",
-    path = "Icon.png",
-    px = 32,
-    py = 32
-})
 
-SMODS.Atlas({
-    key = "balatro",
-    path = "balatro.png",
-    px = 333,
-    py = 216,
-    prefix_config = { key = false },
-})
 
 function DEGENERACY.content.save_config(self)
     SMODS.save_mod_config(self)
