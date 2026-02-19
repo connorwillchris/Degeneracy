@@ -37,18 +37,99 @@ return {
         },
         Joker = {
             -- CREDITS JOKERS
-            j_deg_cloudzXIII = {
-                name = "cloudzXIII",
-                text = {
-                    ""
-                }
-            },
             j_deg_gud = {
                 name = "Gud",
                 text = {
-                    ""
+                    "Founder of the mod,",
+                    "Sprited everything,",
+                    "Suggested at least",
+                    "50% of the ideas,",
+                    '{C:inactive,s:0.8}"wait why am I here again?"',
                 }
             },
+            j_deg_astro = {
+                name = "Astro",
+                text = {
+                    "Suggested the mod name",
+                    '{C:inactive,s:0.8}"Meow"',
+                }
+            },
+            j_deg_cloudzXIII = {
+                name = "cloudzXIII",
+                text = {
+                    "The lead programmer for",
+                    "this mod. Out of everyone,",
+                    "I would thank them the most!"
+                }
+            },
+            j_deg_nrio = {
+                name = "Nrio",
+                text = {
+                    "",
+                    '{C:inactive,s:0.8}"what if snakes and ladder but without ladder /c"',
+                }
+            },
+            j_deg_candy = {
+                name = "Candycaneanniahlator",
+                text = {
+                    "",
+                    '{C:inactive,s:0.8}"wait why am I here again?"',
+                }
+            },
+            j_deg_cg = {
+                name = "Cg",
+                text = {
+                    "I remebered they helped",
+                    "I just forgot what",
+                    "they did.",
+                    '{C:inactive,s:0.8}"shoutout to gay foxgirls"',
+                }
+            },
+            j_deg_tech = {
+                name = "Tech trio",
+                text = {
+                    "",
+                    '{C:inactive,s:0.8}"wait why am I here again?"',
+                }
+            },
+            j_deg_treeman = {
+                name = "Treeman",
+                text = {
+                    "",
+                    '{C:inactive,s:0.8}"wait why am I here again?"',
+                }
+            },
+            j_deg_jamirror = {
+                name = "Jamirror",
+                text = {
+                    "",
+                    '{C:inactive,s:0.8}"wait why am I here again?"',
+                }
+            },
+            j_deg_ali = {
+                name = "Ali (Toga)",
+                text = {
+                    "",
+                    '{C:inactive,s:0.8}"wait why am I here again?"',
+                }
+            },
+            j_deg_silver = {
+                name = "Silverautumn NK",
+                text = {
+                    "",
+                    '{C:inactive,s:0.8}"those who degenerate"',
+                }
+            },
+            j_deg_tatsu = {
+                name = "Tatsu",
+                text = {
+                    "Helped with ideas for",
+                    "jokers like {C:attention}???{}",
+                    '{C:inactive,s:0.8}"idk maybe if you are',
+                    '{C:inactive,s:0.8}in the grandma factory"',
+                }
+            },
+            
             --ADDITIONS
             j_deg_break_limits = {
                 name = "Break Limits",
@@ -356,6 +437,7 @@ return {
             deg_content_edits = "Content edits",
             deg_content_edits_desc = "Edits some content in base game to work with this mod's content",
 
+            k_leadprogrammer_badge = "Lead programmer",
             k_programmer_badge = "Programmer",
             k_artist_badge = "Artist",
             k_ideas_badge = "Ideas",
