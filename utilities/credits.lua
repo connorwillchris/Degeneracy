@@ -1,9 +1,13 @@
-SMODS.Atlas {
-    key = "credits",
-    path = "thanks-to-these-people.png",
-    px = 71,
-    py = 95
-}
+local lcp_ref = Card.click
+function Card:click()
+    local ret = lcp_ref(self)
+    if self.config.center.credits_joker then
+        if self.config.center.link then
+            love.system.openURL(self.config.center.link)
+        end
+    end
+    return ret
+end
 
 DEG.Credits_Joker = SMODS.Joker:extend({
     required_params = {
@@ -22,7 +26,7 @@ DEG.Credits_Joker = SMODS.Joker:extend({
     eternal_compat = false,
     no_collection = true,
     no_mod_badges = true,
-
+    credits_joker = true,
     config = {},
     in_pool = function(self)
         return false
