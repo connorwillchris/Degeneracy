@@ -31,83 +31,107 @@ DEG.Credits_Joker = SMODS.Joker:extend({
     in_pool = function(self)
         return false
     end,
-    set_card_type_badge = function(self, card, badges)
-        if self.programmer then
-            badges[#badges + 1] = create_badge(localize('k_programmer_badge'), G.C.BLUE, G.C.WHITE, 1.2)
-        elseif self.artist then
-            badges[#badges + 1] = create_badge(localize('k_artist_badge'), G.C.PURPLE, G.C.WHITE, 1.2)
-        elseif self.ideas then
-            badges[#badges + 1] = create_badge(localize("k_ideas_badge"), G.C.GREEN, G.C.WHITE, 1.2)
-        end
-    end,
 })
 
--- New Thing! can now just say programmer = true, artist = true, ideas = true etc. to add badge
+
 DEG.Credits_Joker {
     key = "gud",
     atlas = 'credits',
     pos = { x = 0, y = 0 },
-    artist = true
+    set_card_type_badge = function(self, card, badges)
+        badges[#badges + 1] = create_badge(localize('k_artist_badge'), G.C.PURPLE, G.C.WHITE, 1.2)
+    end,
 }
 DEG.Credits_Joker {
     key = "astro",
     atlas = 'credits',
     pos = { x = 1, y = 0 },
-    ideas = true
+    set_card_type_badge = function(self, card, badges)
+        badges[#badges + 1] = create_badge(localize('k_ideas_badge'), G.C.BLUE, G.C.WHITE, 1.2)
+    end,
 }
 DEG.Credits_Joker {
     key = "cloudzXIII",
     atlas = 'credits',
     pos = { x = 2, y = 0 },
-    programmer = true,
+    set_card_type_badge = function(self, card, badges)
+        badges[#badges + 1] = create_badge(localize('k_leadprogrammer_badge'), G.C.EDITION, G.C.UI.TEXT_DARK, 1.2)
+    end,
 }
 DEG.Credits_Joker {
     key = "nrio",
     atlas = 'credits',
     pos = { x = 3, y = 0 },
-    ideas = true
+    set_card_type_badge = function(self, card, badges)
+        badges[#badges + 1] = create_badge(localize('k_ideas_badge'), G.C.GREEEN, G.C.WHITE, 1.2)
+    end,
 }
 DEG.Credits_Joker {
     key = "candy",
     atlas = 'credits',
     pos = { x = 4, y = 0 },
-    ideas = true
+    set_card_type_badge = function(self, card, badges)
+        badges[#badges + 1] = create_badge(localize('k_ideas_badge'), G.C.BLUE, G.C.WHITE, 1.2)
+    end,
 }
 DEG.Credits_Joker {
     key = "cg",
     atlas = 'credits',
     pos = { x = 0, y = 1 },
-    programmer = true,
+    set_card_type_badge = function(self, card, badges)
+        badges[#badges + 1] = create_badge(localize('k_programmer_badge'), G.C.BLUE, G.C.WHITE, 1.2)
+    end,
 }
 DEG.Credits_Joker {
     key = "tech",
     atlas = 'credits',
     pos = { x = 1, y = 1 },
-    ideas = true
+    set_card_type_badge = function(self, card, badges)
+        badges[#badges + 1] = create_badge(localize('k_ideas_badge'), G.C.BLUE, G.C.WHITE, 1.2)
+    end,
 }
 DEG.Credits_Joker {
     key = "treeman",
     atlas = 'credits',
     pos = { x = 2, y = 1 },
-    programmer = true,
+    set_card_type_badge = function(self, card, badges)
+        badges[#badges + 1] = create_badge(localize('k_programmer_badge'), G.C.BLUE, G.C.WHITE, 1.2)
+    end,
 }
 DEG.Credits_Joker {
     key = "jamirror",
     atlas = 'credits',
     pos = { x = 3, y = 1 },
-    programmer = true,
+    set_card_type_badge = function(self, card, badges)
+        badges[#badges + 1] = create_badge(localize('k_programmer_badge'), G.C.BLUE, G.C.WHITE, 1.2)
+    end,
 }
 DEG.Credits_Joker {
     key = "ali",
     atlas = 'credits',
     pos = { x = 4, y = 1 },
-    programmer = true,
+    set_card_type_badge = function(self, card, badges)
+        badges[#badges + 1] = create_badge(localize('k_programmer_badge'), G.C.FILTER, G.C.WHITE, 1.2)
+    end,
 }
 DEG.Credits_Joker {
     key = "silver",
     atlas = 'credits',
     pos = { x = 0, y = 2 },
-    programmer = true,
+    set_card_type_badge = function(self, card, badges)
+        badges[#badges + 1] = create_badge(localize('k_programmer_badge'), SMODS.Gradients.deg_pride, G.C.WHITE, 1.2)
+    end,
+}
+DEG.Credits_Joker {
+    key = "tatsu",
+    loc_vars = function(self, info_queue, card)
+        info_queue[#info_queue + 1] = G.P_CENTERS.j_deg_joker6
+    end,
+    atlas = 'credits',
+    pos = { x = 1, y = 2 },
+    set_card_type_badge = function(self, card, badges)
+        badges[#badges + 1] = create_badge(localize('k_ideas_badge'), HEX('b80b3c'), G.C.WHITE, 1.2)
+    end,
 }
 
 SMODS.current_mod.credits_tab = function()
