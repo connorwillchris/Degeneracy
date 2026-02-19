@@ -242,32 +242,22 @@ return {
                     "when scored"
                 }
             },
-            j_deg_d_of_6 = {
-                name = "Diamond of 6's",
+            j_deg_notsoul = {
+                name = "The soul???",
                 text = {
-                    "If all scored cards",
-                    "add up to {C:attention}15{},",
-                    "gain {C:money}$#1#{}"
-                }
-            },
-            j_deg_soul = {
-                name = "Soul",
-                text = {
-                    "When {C:attention}Blind{} is selected,",
-                    "create a random",
-                    "{C:spectral}Perishable{} Joker",
+                    "When {C:attention}blind{} is selected, Creates",
+                    "a random {V:1}perishable{} {C:attention}joker",
                     "{C:inactive}(Does not need room)"
                 }
             },
-            j_deg_black_hole = {
-                name = "Black Hole",
+            j_deg_notblackhole = {
+                name = "Black hole???",
                 text = {
                     "{C:green}#1# in #2#{} chance to",
-                    "upgrade level of",
-                    "played {C:attention}poker hand{}",
-                    "by {C:attention}2{} and {C:attention}decrease",
-                    "the level of a",
-                    "random {C:attention}poker hand{}"
+                    "level up {C:attention}played hand{} twice but",
+                    "decrease the level of a random",
+                    "{C:attention}poker hand{} by one",
+                    "{C:inactive}(hands can get negative levels)"
                 }
             },
             -- VANILLA
