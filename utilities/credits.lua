@@ -162,7 +162,7 @@ SMODS.current_mod.credits_tab = function()
     local credits_ppl = {
         { ppl = { "j_deg_gud", "j_deg_astro", "j_deg_cloudzXIII", "j_deg_nrio", "j_deg_candy", } },
         { ppl = { "j_deg_cg", "j_deg_tech", "j_deg_treeman", "j_deg_jamirror", "j_deg_ali", } },
-        { ppl = { "j_deg_silver", } }
+        { ppl = { "j_deg_silver", "j_deg_tatsu", } }
     }
 
     --#region Bit with the localised text, can remove/change if unneccessary
