@@ -26,6 +26,7 @@ SMODS.Blind {
                     func = function()
                         if not G.hand.cards[i].ability.deg_locked then
                             SMODS.Stickers["deg_locked"]:apply(G.hand.cards[i], true)
+                            G.hand.cards[i].ability.temp_deg_locked = true
                         end
                         return true
                     end

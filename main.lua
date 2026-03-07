@@ -36,3 +36,28 @@ end
 if next(SMODS.find_mod("CardSleeves")) then
     assert(SMODS.load_file("crossmod/sleeves.lua"))()
 end
+
+SMODS.current_mod.calculate = function(self, context)
+    -- Achievment
+    if context.after and not context.blueprint and context.main_eval then
+        local hand_score = hand_chips * mult
+        local required_score = G.GAME.blind.chips
+
+
+        if hand_score <= -required_score then
+            unlock_achievement("ach_deg_you_win")
+
+            G.ARGS.score_intensity.earned_score = 10000
+            G.ARGS.score_intensity.required_score = 10000
+        end
+    end
+    -- Tangelo Token
+    if context.end_of_round and context.main_eval and not context.blueprint then
+        for k, v in pairs(G.playing_cards) do
+            if v.ability and v.ability.temp_deg_locked then
+                v.ability.temp_deg_locked = nil
+                SMODS.Stickers["deg_locked"]:apply(v, false)
+            end
+        end
+    end
+end
