@@ -1,23 +1,23 @@
-# Degeneracy Balatro Mod
+![Logo](assets/2x/balatro.png)
 
-## What this mod does
+## Degeneracy - A Balatro Mod full of Ranks
 
 Gives you a ton more ranks as of now
 Adds one sticker
 
-This content is based off of a game called dungeons and degenerate gamblers
+This content is based off of the game Dungeons and Degenerate Gamblers
 
 ## Contributors
 
 ### Programmers
 
-- connorwillchris
+- cloudzXIII
 - jamirror
 - CG
 - TheOneGoofAli
 - Silverautumn
 - NK
-- cloudzXIII
+- connorwillchris
 
 ### Art Assets
 
