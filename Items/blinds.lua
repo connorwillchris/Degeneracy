@@ -3,8 +3,8 @@ SMODS.Blind {
     dollars = 8,
     mult = 2,
     boss = { showdown = true },
-    boss_colour = HEX('f94d00'),
-    atlas = 'deg_jokers',
+    boss_colour = HEX('ff9b56'),
+    atlas = 'deg_blinds',
     pos = { x = 0, y = 0 },
     calculate = function(self, blind, context)
         if context.first_hand_drawn then
@@ -46,6 +46,26 @@ SMODS.Blind {
                 }))
             end
             delay(0.5)
+        end
+    end
+}
+
+SMODS.Blind {
+    key = "incarnadine_club",
+    dollars = 8,
+    mult = 2,
+    boss = { showdown = true },
+    boss_colour = HEX('ee3a68'),
+    atlas = 'deg_blinds',
+    pos = { x = 0, y = 1 },
+    calculate = function(self, blind, context)
+        if not blind.disabled then
+            if context.modify_hand then
+                blind.triggered = true
+                mult = 0
+                hand_chips = 0
+                update_hand_text({ sound = 'chips2', modded = true }, { chips = hand_chips, mult = mult })
+            end
         end
     end
 }

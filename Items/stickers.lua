@@ -22,7 +22,7 @@ SMODS.Sticker {
     key = "locked",
     badge_colour = HEX "f6c46a",
     atlas = "deg_stickers",
-    pos = { x = 0, y = 0 },
+    pos = { x = 0, y = 2 },
     sets = { ["Default"] = true, ["Enhanced"] = true, ["Base"] = true },
     needs_enable_flag = true,
 

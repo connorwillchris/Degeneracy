@@ -38,6 +38,7 @@ DEG.Credits_Joker {
     key = "gud",
     atlas = 'credits',
     pos = { x = 0, y = 0 },
+    pronouns = "any_all",
     set_card_type_badge = function(self, card, badges)
         badges[#badges + 1] = create_badge(localize('k_artist_badge'), G.C.PURPLE, G.C.WHITE, 1.2)
     end,
@@ -46,6 +47,7 @@ DEG.Credits_Joker {
     key = "astro",
     atlas = 'credits',
     pos = { x = 1, y = 0 },
+    pronouns = "he_him",
     set_card_type_badge = function(self, card, badges)
         badges[#badges + 1] = create_badge(localize('k_ideas_badge'), G.C.BLUE, G.C.WHITE, 1.2)
     end,
@@ -54,6 +56,7 @@ DEG.Credits_Joker {
     key = "cloudzXIII",
     atlas = 'credits',
     pos = { x = 2, y = 0 },
+    pronouns = "any_all",
     set_card_type_badge = function(self, card, badges)
         badges[#badges + 1] = create_badge(localize('k_leadprogrammer_badge'), G.C.EDITION, G.C.UI.TEXT_DARK, 1.2)
     end,
@@ -62,6 +65,7 @@ DEG.Credits_Joker {
     key = "nrio",
     atlas = 'credits',
     pos = { x = 3, y = 0 },
+    pronouns = "any_all",
     set_card_type_badge = function(self, card, badges)
         badges[#badges + 1] = create_badge(localize('k_ideas_badge'), G.C.GREEEN, G.C.WHITE, 1.2)
     end,
@@ -70,6 +74,7 @@ DEG.Credits_Joker {
     key = "candy",
     atlas = 'credits',
     pos = { x = 4, y = 0 },
+    pronouns = "he_him",
     set_card_type_badge = function(self, card, badges)
         badges[#badges + 1] = create_badge(localize('k_ideas_badge'), G.C.BLUE, G.C.WHITE, 1.2)
     end,
@@ -78,6 +83,7 @@ DEG.Credits_Joker {
     key = "cg",
     atlas = 'credits',
     pos = { x = 0, y = 1 },
+    pronouns = "any_all",
     set_card_type_badge = function(self, card, badges)
         badges[#badges + 1] = create_badge(localize('k_programmer_badge'), G.C.BLUE, G.C.WHITE, 1.2)
     end,
@@ -86,6 +92,7 @@ DEG.Credits_Joker {
     key = "tech",
     atlas = 'credits',
     pos = { x = 1, y = 1 },
+    pronouns = "any_all",
     set_card_type_badge = function(self, card, badges)
         badges[#badges + 1] = create_badge(localize('k_ideas_badge'), G.C.BLUE, G.C.WHITE, 1.2)
     end,
@@ -94,6 +101,7 @@ DEG.Credits_Joker {
     key = "treeman",
     atlas = 'credits',
     pos = { x = 2, y = 1 },
+    pronouns = "he_him",
     set_card_type_badge = function(self, card, badges)
         badges[#badges + 1] = create_badge(localize('k_programmer_badge'), G.C.BLUE, G.C.WHITE, 1.2)
     end,
@@ -102,6 +110,7 @@ DEG.Credits_Joker {
     key = "jamirror",
     atlas = 'credits',
     pos = { x = 3, y = 1 },
+    pronouns = "they_them",
     set_card_type_badge = function(self, card, badges)
         badges[#badges + 1] = create_badge(localize('k_programmer_badge'), G.C.BLUE, G.C.WHITE, 1.2)
     end,
@@ -110,6 +119,7 @@ DEG.Credits_Joker {
     key = "ali",
     atlas = 'credits',
     pos = { x = 4, y = 1 },
+    pronouns = "any_all",
     set_card_type_badge = function(self, card, badges)
         badges[#badges + 1] = create_badge(localize('k_programmer_badge'), G.C.FILTER, G.C.WHITE, 1.2)
     end,
@@ -118,6 +128,7 @@ DEG.Credits_Joker {
     key = "silver",
     atlas = 'credits',
     pos = { x = 0, y = 2 },
+    pronouns = "he_him",
     set_card_type_badge = function(self, card, badges)
         badges[#badges + 1] = create_badge(localize('k_programmer_badge'), SMODS.Gradients.deg_pride, G.C.WHITE, 1.2)
     end,
@@ -129,8 +140,27 @@ DEG.Credits_Joker {
     end,
     atlas = 'credits',
     pos = { x = 1, y = 2 },
+    pronouns = "any_all",
     set_card_type_badge = function(self, card, badges)
         badges[#badges + 1] = create_badge(localize('k_ideas_badge'), HEX('b80b3c'), G.C.WHITE, 1.2)
+    end,
+}
+DEG.Credits_Joker {
+    key = "vega",
+    atlas = 'credits',
+    pos = { x = 2, y = 2 },
+    pronouns = "any_all",
+    set_card_type_badge = function(self, card, badges)
+        badges[#badges + 1] = create_badge(localize('k_artist_badge'), HEX('43e686'), G.C.WHITE, 1.2)
+    end,
+}
+DEG.Credits_Joker {
+    key = "fireice",
+    atlas = 'credits',
+    pos = { x = 3, y = 2 },
+    pronouns = "he_him",
+    set_card_type_badge = function(self, card, badges)
+        badges[#badges + 1] = create_badge(localize('k_programmer_badge'), G.C.PURPLE, G.C.WHITE, 1.2)
     end,
 }
 
@@ -162,7 +192,7 @@ SMODS.current_mod.credits_tab = function()
     local credits_ppl = {
         { ppl = { "j_deg_gud", "j_deg_astro", "j_deg_cloudzXIII", "j_deg_nrio", "j_deg_candy", } },
         { ppl = { "j_deg_cg", "j_deg_tech", "j_deg_treeman", "j_deg_jamirror", "j_deg_ali", } },
-        { ppl = { "j_deg_silver", "j_deg_tatsu", } }
+        { ppl = { "j_deg_silver", "j_deg_tatsu", "j_deg_vega", "j_deg_fireice",} }
     }
 
     --#region Bit with the localised text, can remove/change if unneccessary

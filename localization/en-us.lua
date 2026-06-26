@@ -7,7 +7,14 @@ return {
                     "Applies the locked sticker to",
                     "all cards in first drawn hand"
                 }
-            }
+            },
+            bl_deg_incarnadine_club = {
+                name = "Incarnadine Club",
+                text = {
+                    "Sets base chips and",
+                    "mult to 0"
+                }
+            },
         },
         Back = {
             b_deg_giantrat = {
@@ -15,6 +22,13 @@ return {
                 text = {
                     "Played cards are",
                     "{C:attention}returned{} to deck",
+                },
+            },
+            b_deg_e = {
+                name = "All of the ranks",
+                text = {
+                    "Start with {C:attention}every{}",
+                    "rank. {C:attention}+2{} hand size",
                 },
             },
         },
@@ -41,10 +55,10 @@ return {
                 name = "Gud",
                 text = {
                     "Founder of the mod,",
-                    "Sprited everything,",
-                    "Suggested at least",
-                    "50% of the ideas,",
-                    '{C:inactive,s:0.8}"wait why am I here again?"',
+                    "Sprited almost everything,",
+                    "Suggested roughly half the ideas.",
+                    '{C:inactive,s:0.8}"because 12 gay cats is a',
+                    '{C:inactive,s:0.8}bit too crouded for one row"',
                 }
             },
             j_deg_astro = {
@@ -129,7 +143,23 @@ return {
                     '{C:inactive,s:0.8}in the grandma factory"',
                 }
             },
-            
+            j_deg_vega = {
+                name = "Vega",
+                text = {
+                    "They are the reason why this mod",
+                    "has 30+ ranks and not 21",
+                    '{C:inactive,s:0.8}"That is nothing, wait until',
+                    '{C:inactive,s:0.8}more than 1000 and it still goes further"',
+                }
+            },
+            j_deg_fireice = {
+                name = "Fireice",
+                text = {
+                    "Helped me with creating the",
+                    "blinds this mod adds.",
+                    '{C:inactive,s:0.8}"le autism"'
+                }
+            },
             --ADDITIONS
             j_deg_break_limits = {
                 name = "Break Limits",
@@ -248,8 +278,8 @@ return {
                     "{C:inactive}(Currently {C:money}$#3#{}{C:inactive})"
                 }
             },
-            j_deg_untitled = {
-                name = "???",
+            j_deg_absolutevalue = {
+                name = "Absolute value",
                 text = {
                     "Cards with a {C:dark_edition}Negative{} rank",
                     "score {C:mult}+Mult{}",
@@ -388,7 +418,41 @@ return {
                     "{C:blue,s:2}Art",
                     "{C:attention,s:1}Gud",
                 }
-            }
+            },
+            deg_brass_sticker = {
+                name = "Brass sticker",
+                text = {
+                    "Used this Joker",
+                    "to win on {C:attention}Brass",
+                    "{C:attention}Stake{} difficulty"
+                }
+            },
+            deg_saffron_sticker = {
+                name = "Saffron sticker",
+                text = {
+                    "Used this Joker",
+                    "to win on {C:attention}Saffron",
+                    "{C:attention}Stake{} difficulty"
+                }
+            },
+            deg_periwinkle_sticker = {
+                name = "Periwinkle sticker",
+                text = {
+                    "Used this Joker",
+                    "to win on {C:attention}Periwinkle",
+                    "{C:attention}Stake{} difficulty"
+                }
+            },
+            
+        },
+        deg_rankups = {
+            c_deg_rankups_a = {
+                name = "rankup A",
+                text = {
+                    "Randomise the rank of up to",
+                    "3 selected cards"
+                },
+            },
         },
         Stake = {
             stake_deg_brass = {
@@ -396,9 +460,40 @@ return {
                 text = {
                     "{C:green}1 in 7{} cards in deck are {C:attention}locked",
                     "{C:inactive,s:0.8}(Can't be manually discarded)",
-                    "{s:0.8}Applies all previous Stakes",
+                    "{s:0.8}Applies Gold Stake",
                 },
             },
+            stake_deg_saffron = {
+                name = "Saffron Stake",
+                text = {
+                    "When boss blind is deafeated",
+                    "{C:red}lose 25%{} of your money",
+                    "{s:0.8}Applies Brass Stake",
+                },
+            },
+            stake_deg_periwinkle = {
+                name = "Periwinkle Stake",
+                text = {
+                    "{C:red}Rare{} jokers can\'t spawn naturally",
+                    "{s:0.8}Applies Saffron Stake",
+                },
+            },
+            stake_deg_fucia = {
+                name = "Fucia Stake",
+                text = {
+                    "{C:green}1 in 7{} cards in deck are {C:attention}locked",
+                    "{C:inactive,s:0.8}(Can't be manually discarded)",
+                    "{s:0.8}Applies Periwinkle Stake",
+                },
+            },
+            --[[stake_deg_fucia = {
+                name = "Fucia Stake",
+                text = {
+                    "{C:green}1 in 7{} cards in deck are {C:attention}locked",
+                    "{C:inactive,s:0.8}(Can't be manually discarded)",
+                    "{s:0.8}Applies Fucia Stake",
+                },
+            },]]--
         },
         Colour = {
             c_deg_poker_green = {

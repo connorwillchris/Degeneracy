@@ -1,10 +1,4 @@
--- Mod Icon and Balatro Logo
-SMODS.Atlas({
-    key = "modicon",
-    path = "Icon.png",
-    px = 32,
-    py = 32
-})
+-- Balatro Logo
 
 SMODS.Atlas({
     key = "balatro",
@@ -73,4 +67,20 @@ SMODS.Atlas {
     path = "thanks-to-these-people.png",
     px = 71,
     py = 95
+}
+
+SMODS.Atlas {
+    key = "consumables",
+    path = "consumables.png",
+    px = 71,
+    py = 95
+}
+
+SMODS.Atlas {
+    key = "deg_blinds",
+    path = "blinds.png",
+    px = 34,
+    py = 34,
+    atlas_table = 'ANIMATION_ATLAS',
+    frames = 21,
 }
