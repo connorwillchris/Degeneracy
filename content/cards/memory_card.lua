@@ -57,20 +57,13 @@ SMODS.Joker {
             card.ability.extra.saved = nil
         end
     end,
-}
-
-DEG.Button("j_deg_memory_card", {
-    text = "SAVE",
-    can_click = function(e)
+    
+    deg_use_config = { colour = G.C.GREEN, text = "SAVE" },
+    can_use = function(self,card)
         return G.hand and #G.hand.highlighted == 1
     end,
-    ui_config = {
-        align = 'cl',
-        offset = { x = 0.2, y = 0 },
-    },
-    click = function(e)
-        local card = e.config and e.config.ref_table
+    use = function(self,card)
         card.ability.extra.saved = G.hand.highlighted[1]:save()
         SMODS.calculate_effect({ message = "Saved!", colour = G.C.FILTER }, card)
     end
-})
+}

@@ -354,10 +354,10 @@ return {
                 }
             },
             j_deg_notsoul = {
-                name = "The soul???",
+                name = "The Soul???",
                 text = {
-                    "When {C:attention}blind{} is selected, Creates",
-                    "a random {V:1}perishable{} {C:attention}joker",
+                    "When {C:attention}Blind{} is selected,",
+                    "create a random {V:1}Perishable{} {C:attention}Joker",
                     "{C:inactive}(Does not need room)"
                 }
             },

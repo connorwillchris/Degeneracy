@@ -38,21 +38,12 @@ SMODS.Joker {
             }
         end
     end,
-}
-
-DEG.Button("j_deg_escardgot", {
-    text = "USE",
-    can_click = function(e)
-        local card = e.config and e.config.ref_table
+    
+    deg_use_config = { colour = G.C.RED, text = localize("b_use"):upper(), cost = 4 },
+    can_use = function(self,card)
         return G.hand and #G.hand.highlighted == 1 and card.ability.extra.rounds_remaining > 1
     end,
-    ui_config = {
-        align = 'cl',
-        offset = { x = 0.2, y = 0 },
-    },
-    click = function(e)
-        local card = e.config and e.config.ref_table
-        if G.hand.highlighted then
+    use = function (self,card)
             card.ability.extra.rounds_remaining = card.ability.extra.rounds_remaining - 1
             G.E_MANAGER:add_event(Event({
                 trigger = 'after',
@@ -89,7 +80,6 @@ DEG.Button("j_deg_escardgot", {
             delay(0.5)
 
             SMODS.calculate_effect({ message = card.ability.extra.rounds_remaining .. '', }, card)
-        end
     end
-})
+}
 --#endregion

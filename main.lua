@@ -10,18 +10,14 @@ for _, filename in pairs(NFS.getDirectoryItems(SMODS.current_mod.path .. "utilit
     assert(SMODS.load_file("utilities/" .. filename))()
 end
 
-assert(SMODS.load_file("config.lua"))()
-assert(SMODS.load_file("Items/challenges.lua"))()
-assert(SMODS.load_file("Items/consumables.lua"))()
-assert(SMODS.load_file("Items/ranks.lua"))()
-assert(SMODS.load_file("Items/stakes.lua"))()
-assert(SMODS.load_file("Items/stickers.lua"))()
-assert(SMODS.load_file("Items/decks.lua"))()
-assert(SMODS.load_file("Items/blinds.lua"))()
-assert(SMODS.load_file("Items/sets.lua"))()
+-- Load Jokers
+for _, filename in pairs(NFS.getDirectoryItems(SMODS.current_mod.path .. "content/cards")) do
+    assert(SMODS.load_file("content/cards/" .. filename))()
+end
 
-for _, filename in pairs(NFS.getDirectoryItems(SMODS.current_mod.path .. "Items/jokers")) do
-    assert(SMODS.load_file("Items/jokers/" .. filename))()
+-- Load Misc
+for _, filename in pairs(NFS.getDirectoryItems(SMODS.current_mod.path .. "content/misc")) do
+    assert(SMODS.load_file("content/misc/" .. filename))()
 end
 
 function DEGENERACY.content.save_config(self)
@@ -29,11 +25,11 @@ function DEGENERACY.content.save_config(self)
 end
 
 if next(SMODS.find_mod("MoreFluff")) then
-    assert(SMODS.load_file("crossmod/morefluff.lua"))()
+    assert(SMODS.load_file("content/crossmod/morefluff.lua"))()
 end
 
 if next(SMODS.find_mod("CardSleeves")) then
-    assert(SMODS.load_file("crossmod/sleeves.lua"))()
+    assert(SMODS.load_file("content/crossmod/sleeves.lua"))()
 end
 
 SMODS.current_mod.calculate = function(self, context)
@@ -44,7 +40,7 @@ SMODS.current_mod.calculate = function(self, context)
 
 
         if hand_score <= -required_score then
-            unlock_achievement("ach_deg_you_win")
+        check_for_unlock({ type = 'you_win' })
 
             G.ARGS.score_intensity.earned_score = 10000
             G.ARGS.score_intensity.required_score = 10000
