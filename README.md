@@ -1,10 +1,10 @@
 ![Logo](assets/2x/balatro.png)
 
-## Degeneracy
+# Degeneracy
 
 A Balatro mod adding a ton of new Ranks! With content primarily based off of the game Dungeons and Degenerate Gamblers
 
-# Additions
+## Additions
 
 As of latest dev build, Abandonia currently adds
 * 23 Jokers
