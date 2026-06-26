@@ -39,7 +39,7 @@ deg = {
 '''
 match_indent = true
 
-# Untitled Joker
+# Absolute Value
 [[patches]]
 [patches.pattern]
 target = '=[SMODS _ "src/utils.lua"]'
