@@ -6,7 +6,7 @@ A Balatro mod adding a ton of new Ranks! With content primarily based off of the
 
 ## Additions
 
-As of latest dev build, Abandonia currently adds
+As of latest dev build, Degeneracy currently adds
 * 23 Jokers
 * 2 Decks
 * 2 Blinds
