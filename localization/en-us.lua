@@ -174,8 +174,8 @@ return {
                     "If all scored cards",
                     "add up to {C:attention}21{} and",
                     "played hand contains",
-                    "{C:attention}5{} cards, gain",
-                    "a random {C:attention}Booster Pack{} Tag",
+                    "{C:attention}5{} cards, gain a random",
+                    "{C:attention}Booster Pack{} Tag",
                     "{C:inactive}(Aces count as 1)",
                 }
             },

@@ -60,6 +60,7 @@ DEG.Credits_Joker {
     set_card_type_badge = function(self, card, badges)
         badges[#badges + 1] = create_badge(localize('k_leadprogrammer_badge'), G.C.EDITION, G.C.UI.TEXT_DARK, 1.2)
     end,
+    link = "https://ko-fi.com/cloudzxiii"
 }
 DEG.Credits_Joker {
     key = "nrio",
