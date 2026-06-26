@@ -56,3 +56,21 @@ SMODS.current_mod.calculate = function(self, context)
         end
     end
 end
+
+-- IDEAS (prolly outdated but putting them here rather than in seperate files)
+--[[
+-- Hand where played cards have the rank add up to 0?
+
+SMODS.ConsumableType({
+    key = "uniquechips",
+    primary_colour = HEX("60b2be"),
+    secondary_colour = HEX("60b2be"),
+    collection_rows = { 5, 5 },
+    shop_rate = 0,
+    default = "c_fool"
+})
+
+-- This is for version 0.2
+-- They will act as vouchers as long as you have them in your consumable slots
+
+--]]

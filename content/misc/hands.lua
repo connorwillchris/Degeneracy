@@ -1,1 +1,0 @@
--- Hand where played cards have the rank add up to 0?
