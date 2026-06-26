@@ -21,7 +21,7 @@ SMODS.UndiscoveredSprite {
     atlas = "consumables",
     pos = { x = 9, y = 2 },
 }
-
+--[[
 SMODS.Consumable {
     in_pool = function(self,args)
         return false
@@ -300,3 +300,4 @@ SMODS.Consumable {
         return G.hand and #G.hand.highlighted > 0 and #G.hand.highlighted <= card.ability.max_highlighted
     end
 }
+--]]
