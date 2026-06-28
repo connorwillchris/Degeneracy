@@ -83,6 +83,10 @@ for _, def in ipairs(ranks) do
       entr_nilsuit = 10,
       zero_Brights = 11,
       celestin_Vortexes = 13,
+      vegasstuff_Swords = 14,
+      vegasstuff_Cups = 15,
+      vegasstuff_Pentacles = 16,
+      vegasstuff_Wands = 17
     },
     strength_effect = {
       fixed = 1,
