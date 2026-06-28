@@ -78,6 +78,11 @@ for _, def in ipairs(ranks) do
       bunc_Halberds = 5,
       paperback_Stars = 6,
       paperback_Crowns = 7,
+      mtg_Clovers = 8,
+      mtg_Suitless = 9,
+      entr_nilsuit = 10,
+      zero_Brights = 11,
+      celestin_Vortexes = 13,
     },
     strength_effect = {
       fixed = 1,
