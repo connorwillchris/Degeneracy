@@ -241,9 +241,9 @@ return {
         name = "Report Card",
         text = {
           {
-            "Add a random {C:attention}Ace{} to",
-            "your deck",
-            "at end of round,",
+            "Add a random {C:attention}Ace{}",
+            "to your deck",
+            "at end of round",
           },
           {
             "If you have at least {C:attention}$#1#{},",
@@ -264,9 +264,9 @@ return {
         name = "Blood Donor",
         text = {
           "Played cards with",
-          "{C:hearts}Heart{} suit",
-          "decrease in rank by {C:attention}1{}",
-          "and give {C:white,X:mult}X#1#{} Mult when scored",
+          "{C:hearts}Heart{} suit decrease",
+          "in rank by {C:attention}1{} and give",
+          "{C:white,X:mult}X#1#{} Mult when scored",
         }
       },
       j_deg_cardiovascular_exercise = {
@@ -315,8 +315,8 @@ return {
         name = "Joker 4",
         text = {
           "Played {C:attention}Glass Cards{}",
-          "give an additional {C:white,X:mult}X#1#{} Mult",
-          "when scored"
+          "give an additional",
+          "{C:white,X:mult}X#1#{} Mult when scored"
         }
       },
       j_deg_joker5 = {
@@ -357,7 +357,8 @@ return {
         name = "The Soul???",
         text = {
           "When {C:attention}Blind{} is selected,",
-          "create a random {V:1}Perishable{} {C:attention}Joker",
+          "create a random",
+          "{V:1}Perishable{} {C:attention}Joker",
           "{C:inactive}(Does not need room)"
         }
       },
